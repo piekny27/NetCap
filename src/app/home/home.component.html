@@ -1,336 +1,507 @@
 <div class="text-bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-                <h3 class="float-md-start mb-0">Szuz.pl</h3>
-                <nav class="nav nav-masthead justify-content-center float-md-end">
-                    <a class="nav-link fw-bold py-1 px-0" href="admin.html">Admin</a>
-                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="products.html">Produkty</a>
-                    <a class="nav-link fw-bold py-1 px-0" href="login.html">Zaloguj</a>
-                </nav>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">NetCap</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0" href="admin.html">Admin</a>
+          <a
+            class="nav-link fw-bold py-1 px-0 active"
+            aria-current="page"
+            href="products.html"
+            >Products</a
+          >
+          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/login']"> Log In</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Katalog na sezon zimowy</h1>
+          <p class="lead">
+            Witaj w strefie obuwia.<br />Najpierw przymierz potem kup.
+          </p>
+          <p class="lead">
+            Zapoznaj się z naszą bogatą ofertą! Każde obuwie szyte jest przez
+            super wykwalifikowaną szwaczke. Nic dodać nic ująć!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://a.allegroimg.com/s360/11e6b7/f4a613da445e9816450266dbc2ce/BUTY-MESKIE-4F-TREKKINGOWE-WODOODPORNE-ZIMOWE-R-42"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 3</small>
+                </div>
+              </div>
             </div>
-        </header>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-UjdbbOYJA-leV69cwmJ-PgsIMAS7lZ9YnfFsJk5Pv0AlIF7P4pI3UMViCkxyPXi1xM&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 12</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4mm9cb1O_yuY9sFVdLseICdfb7V-OiDMS-Q&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 2</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuZZeFi1Ps6BAa_qx_cZqQmRt7ADyBzdkuZA&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 9</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1utnaobzEt2Iku1GAwGYlE885YE9d3mT3eg&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 8</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTlXRfQxyNmbMOU94JCqn-MXhmB-DLt1EECe0zEbcRfVzAjoGGEL4n0nVf3XIKmE9TXg&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 11</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2JfK_IGgtcXLB0fNdNLRj5kjikJWVHZRt-kMXAJqYRedUr89fGRCyOxCQw-qs5lGe7A&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 9</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShU8QyRLvrKkpXNsMWHtBo7afijXET056I_OHcMYT35brkm9gQtLN2XbaoQvVnCtzsi8s&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Pozostało 3</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg
+                class="bd-placeholder-img card-img-top"
+                width="100%"
+                height="225"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <image
+                  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYyT6jls8iQdTPRTOUZMy9IwOryM1f1kxEXw&usqp=CAU"
+                  height="100%"
+                  width="100%"
+                />
+              </svg>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Numer artykułu:</b> 1372879 <br />
+                  <b>Kolor:</b> beżowy <br />
+                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
+                  <b>Wnętrze buta:</b> materiał tekstylny <br />
+                  <b>Podeszwa:</b> materiał syntetyczny <br />
+                  sznurowane <br />
+                  ocieplane <br />
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Zobacz
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      Kup
+                    </button>
+                  </div>
+                  <small class="text-muted">Wyprzedano</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </main>
 
-
-    <main>
-        <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Katalog na sezon zimowy</h1>
-                    <p class="lead ">Witaj w strefie obuwia.<br>Najpierw przymierz potem kup.</p>
-                    <p class="lead ">Zapoznaj się z naszą bogatą ofertą! Każde obuwie szyte jest przez super
-                        wykwalifikowaną
-                        szwaczke. Nic dodać nic ująć!</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="album py-5 bg-light">
-            <div class="container">
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://a.allegroimg.com/s360/11e6b7/f4a613da445e9816450266dbc2ce/BUTY-MESKIE-4F-TREKKINGOWE-WODOODPORNE-ZIMOWE-R-42"
-                                    height="100%" width="100%" />
-
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 3</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-UjdbbOYJA-leV69cwmJ-PgsIMAS7lZ9YnfFsJk5Pv0AlIF7P4pI3UMViCkxyPXi1xM&usqp=CAU"
-                                    height="100%" width="100%" />
-
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 12</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4mm9cb1O_yuY9sFVdLseICdfb7V-OiDMS-Q&usqp=CAU"
-                                    height="100%" width="100%" />
-
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 2</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuZZeFi1Ps6BAa_qx_cZqQmRt7ADyBzdkuZA&usqp=CAU"
-                                    height="100%" width="100%" />
-
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 9</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1utnaobzEt2Iku1GAwGYlE885YE9d3mT3eg&usqp=CAU"
-                                    height="100%" width="100%" />
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 8</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnTlXRfQxyNmbMOU94JCqn-MXhmB-DLt1EECe0zEbcRfVzAjoGGEL4n0nVf3XIKmE9TXg&usqp=CAU"
-                                    height="100%" width="100%" />
-
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 11</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2JfK_IGgtcXLB0fNdNLRj5kjikJWVHZRt-kMXAJqYRedUr89fGRCyOxCQw-qs5lGe7A&usqp=CAU"
-                                    height="100%" width="100%" />
-
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 9</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShU8QyRLvrKkpXNsMWHtBo7afijXET056I_OHcMYT35brkm9gQtLN2XbaoQvVnCtzsi8s&usqp=CAU"
-                                    height="100%" width="100%" />
-
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Pozostało 3</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <image
-                                    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYyT6jls8iQdTPRTOUZMy9IwOryM1f1kxEXw&usqp=CAU"
-                                    height="100%" width="100%" />
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text">
-                                    <b>Numer artykułu:</b> 1372879 <br>
-                                    <b>Kolor:</b> beżowy <br>
-                                    <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br>
-                                    <b>Wnętrze buta:</b> materiał tekstylny <br>
-                                    <b>Podeszwa:</b> materiał syntetyczny <br>
-                                    sznurowane <br>
-                                    ocieplane <br>
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kup</button>
-                                    </div>
-                                    <small class="text-muted">Wyprzedano</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <footer class=" py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="#">Back to top</a>
-            </p>
-            <p class="mb-1">Najlepszy sklep ever! Tylko u nas promocje -99%</p>
-            <p class="mb-0">Po więcej informacji zapraszamy do naszego newslettera.</p>
-        </div>
-    </footer>
+  <footer class="py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Najlepszy sklep ever! Tylko u nas promocje -99%</p>
+      <p class="mb-0">
+        Po więcej informacji zapraszamy do naszego newslettera.
+      </p>
+    </div>
+  </footer>
 </div>

@@ -1,7 +1,7 @@
 <div class="displayTable">
     <div class="displayTableCell">
       <div class="authBlock">
-        <h3>Sign In</h3>
+        <h3>Login to NetCap</h3>
         <div class="formGroup">
           <input type="text" class="formControl" placeholder="Username" #userName required>
         </div>
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="redirectToLogin">
-        <span>Don't have an account?<span class="redirect" routerLink="/register-user"> Sign Up</span></span>
+        <span>Don't have an account?<span class="redirect" [routerLink]="['/register']"> Sign Up</span></span>
       </div>
     </div>
   </div>

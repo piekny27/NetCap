@@ -35,19 +35,16 @@
         <div class="formGroup">
           <button
             type="button"
-            class="btn googleBtn"
-            (click)="authService.GoogleAuth()"
-          >
+            class="btn googleBtn"(click)="authService.GoogleAuth()">
             <i class="fab fa-google-plus-g"></i>
             Continue with Google
           </button>
         </div>
       </div>
       <div class="redirectToLogin">
-        <span
-          >Already have an account?
-          <span class="redirect" routerLink="/sign-in">Log In</span></span
-        >
+        <span>
+          Already have an account?
+          <span class="redirect" [routerLink]="['/login']">Log In</span></span>
       </div>
     </div>
   </div>
