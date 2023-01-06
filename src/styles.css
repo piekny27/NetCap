@@ -32,12 +32,12 @@ h6 {
   font-weight: 600;
 }
 
-.media-body h1 {
+.media-body h3 {
   font-weight: 300;
   margin-bottom: 20px;
 }
 
-.media-body h1 strong {
+.media-body h3 strong {
   font-weight: 600;
 }
 
@@ -66,7 +66,7 @@ h6 {
   display: table;
   width: 100%;
   height: 100%;
-  background: #12056d;
+  background: #212529;
 }
 
 .displayTableCell {
@@ -142,7 +142,7 @@ input:-moz-placeholder {
   font-size: 16px;
   font-weight: 600;
   padding: 15px 0;
-  background: #f96ea8;
+  background: #36a14d;
   color: #ffffff;
   cursor: pointer;
   outline: none;
@@ -158,7 +158,7 @@ input:-moz-placeholder {
 }
 
 .displayTable .googleBtn {
-  background: #4dd5fe;
+  background: #aa4331;
 }
 
 .displayTable .facebookBtn {
@@ -339,7 +339,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .bg-dark {
-  background-color: #3f51b5 !important;
+  background-color: #212529 !important;
 }
 
 .gap-right {
