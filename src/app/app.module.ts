@@ -32,7 +32,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase, 'NetCap'),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
