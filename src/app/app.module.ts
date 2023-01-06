@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthService } from "./shared/services/auth.service";
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ProductsComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
