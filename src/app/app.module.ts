@@ -19,6 +19,9 @@ import { AuthService } from "./components/shared/services/auth.service";
 import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { LaptopDetailsComponent } from './components/laptop-details/laptop-details.component';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LaptopDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    FormsModule,
   ],
   providers: [
     AuthService
