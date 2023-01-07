@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "netcap2": {
+    "netcap": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/netcap2",
+            "outputPath": "dist/netcap",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "netcap2:build:production"
+              "browserTarget": "netcap:build:production"
             },
             "development": {
-              "browserTarget": "netcap2:build:development"
+              "browserTarget": "netcap:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "netcap2:build"
+            "browserTarget": "netcap:build"
           }
         },
         "test": {
