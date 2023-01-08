@@ -1,0 +1,574 @@
+{
+   "laptops":[
+      {
+         "id":2881,
+         "name":"Msi Katana GF76 11UC-655NL",
+         "mpn":"9S7-17L212-655",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/baeaa801abbf0e5f3101eec2a2616a74.jpg",
+         "price":{
+            "price":null,
+            "old_price":1199,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/msi-katana-gf76-11uc-655nl-gaming-laptop-17-3-inch/9300000075189520/"
+         },
+         "info":"Intel Core i7 - i7-11800H - 8 cores - 17.3 inch - 16GB - 512GB SSD - Black - 9S7-17L212-655",
+         "main":{
+            "cpu_type":"Intel Core i7",
+            "cpu_implementation":"i7-11800H",
+            "cpu_number_of_cores":8,
+            "display_size__inch":17.3,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Black"
+         }
+      },
+      {
+         "id":6204,
+         "name":"Apple Macbook Pro",
+         "mpn":"MKGR3LL/A",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/57413871ce598d16ad7467cfd4a8696b.jpg",
+         "price":{
+            "price":1599,
+            "old_price":null,
+            "currency":"USD",
+            "url":"https://www.bestbuy.com/site/macbook-pro-14-laptop-apple-m1-pro-chip-16gb-memory-512gb-ssd-latest-model-silver/6450856.p?skuId=6450856"
+         },
+         "info":"2021 - Apple M1 Pro - Apple M1 Pro - 8 cores - 14.2 inch - 16GB - 512GB SSD - Silver - MKGR3LL/A",
+         "main":{
+            "general_year":2021,
+            "cpu_type":"Apple M1 Pro",
+            "cpu_implementation":"Apple M1 Pro",
+            "cpu_number_of_cores":8,
+            "display_size__inch":14.2,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Silver"
+         }
+      },
+      {
+         "id":6202,
+         "name":"HP Victus 16",
+         "mpn":"6E1F9EA#ABH",
+         "price":{
+            "price":1349,
+            "old_price":1319.9,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/victus-16-e0222nd-ryzen-5-5600h-hexa-nvidia-geforce-rtx-3060-6gb-vram-mica-silver-16-1-fhd-antiglare-ips-250-nits-144hznarrow-border-flat-qwerty/5071611"
+         },
+         "info":"AMD Ryzen™ 5 - 5600H - 6 cores - 16.1 inch - 16GB - 512GB SSD - Mica zilver - 6E1F9EA#ABH",
+         "main":{
+            "cpu_type":"AMD Ryzen™ 5",
+            "cpu_implementation":"5600H",
+            "cpu_number_of_cores":6,
+            "display_size__inch":16.1,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Mica zilver"
+         }
+      },
+      {
+         "id":6268,
+         "name":"Medion Akoya E15413",
+         "mpn":"30034235",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/2d5bfd639ba38ab709bca66f45612aa7.jpg",
+         "price":{
+            "price":758.74,
+            "old_price":null,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/e15413-i5-512f8-qwerty/5089957"
+         },
+         "info":"Intel® Core™ i5 - i5-1235U - 10 cores - 15.6 inch - 8GB - 512GB SSD - Metallic - 30034235",
+         "main":{
+            "cpu_type":"Intel® Core™ i5",
+            "cpu_implementation":"i5-1235U",
+            "cpu_number_of_cores":10,
+            "display_size__inch":15.6,
+            "memory_ram__gb":8,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Metallic"
+         }
+      },
+      {
+         "id":6205,
+         "name":"Microsoft Surface Book 3",
+         "mpn":"SMN-00001",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/3e6d19881a3cecc045ba50ed684867b5.jpg",
+         "price":{
+            "price":2519.99,
+            "old_price":null,
+            "currency":"USD",
+            "url":"https://www.bestbuy.com/site/microsoft-surface-book-3-15-touch-screen-pixelsense-2-in-1-laptop-intel-core-i7-32gb-memory-512gb-ssd-platinum/6408385.p?skuId=6408385"
+         },
+         "info":"2020 - Intel 10th Generation Core i7 - 1065G7 - 4 cores - 15 inch - 32GB - 512GB SSD - Platinum - SMN-00001",
+         "main":{
+            "general_year":2020,
+            "cpu_type":"Intel 10th Generation Core i7",
+            "cpu_implementation":"1065G7",
+            "cpu_number_of_cores":4,
+            "display_size__inch":15,
+            "memory_ram__gb":32,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Platinum"
+         }
+      },
+      {
+         "id":692,
+         "name":"Asus Rog Zephyrus G14 GA402RJ-L8018W 6900HS",
+         "mpn":"90NR09T4-M00430",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/52a82d5610a9293c3efbb7668f256503.jpg",
+         "price":{
+            "price":2311.44,
+            "old_price":2311.57,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/qwerty-ga402rj-gray-14i-r9-8gb-2-1tb-ssd-win11-qwerty/4786637"
+         },
+         "info":"AMD Ryzen™ 9 - 6900HS - 8 cores - 14 inch - 16GB - 1000GB SSD - Eclipse Gray AniMe Matrix version - 90NR09T4-M00430",
+         "main":{
+            "cpu_type":"AMD Ryzen™ 9",
+            "cpu_implementation":"6900HS",
+            "cpu_number_of_cores":8,
+            "display_size__inch":14,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Eclipse Gray AniMe Matrix version"
+         }
+      },
+      {
+         "id":693,
+         "name":"Msi Creator Z16P B12UGST-019BE i9-12900H",
+         "mpn":"CREATOR Z16P B12UGST-019BE",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/a85bed7da29534d407aefebfedeefc2c.jpg",
+         "price":{
+            "price":3662.71,
+            "old_price":3662.07,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/msi-creator-z16p-b12ugst-019be-i9-12900h-notebook-40-6-cm-touchscreen-quad-hd-intel-core-i9-32-gb-ddr5-sdram-2000-gb-ssd-nvidia-geforce-rtx-3070-ti-wi-fi-6e-windows-11-pro-grijs/9300000075519279/"
+         },
+         "info":"Intel Core i9 - i9-12900H - 14 cores - 16 inch - 32GB - 2000GB SSD - Gray - CREATOR Z16P B12UGST-019BE",
+         "main":{
+            "cpu_type":"Intel Core i9",
+            "cpu_implementation":"i9-12900H",
+            "cpu_number_of_cores":14,
+            "display_size__inch":16,
+            "memory_ram__gb":32,
+            "storage_type":"SSD",
+            "storage_capacity__gb":2000,
+            "design_color_name":"Gray"
+         }
+      },
+      {
+         "id":4165,
+         "name":"Msi PULSE GL66 12UEK",
+         "mpn":"GL6612UEK021NL",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/b2f00e9717babb88e78734aa31f3afb7.jpg",
+         "price":{
+            "price":1699,
+            "old_price":1699.01,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/msi-pulse-gl66-12uek-021nl-laptop/4680704"
+         },
+         "info":"Intel® Core™ i7 - i7-12700H - 14 cores - 15.6 inch - 16GB - 1000GB SSD - Gray, Titanium - GL6612UEK021NL",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-12700H",
+            "cpu_number_of_cores":14,
+            "display_size__inch":15.6,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Gray, Titanium"
+         }
+      },
+      {
+         "id":2182,
+         "name":"Acer Nitro 5 AN515-45-R1DX",
+         "mpn":"NH.QBAEH.004",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/74227a662db6c8b2018a731ae279f1c3.jpg",
+         "price":{
+            "price":989,
+            "old_price":959,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/acer-nitro-5-an515-45-r1dx-gaming-laptop-15-6-inch/9300000061847383/"
+         },
+         "info":"AMD Ryzen 5 - 5600H - 6 cores - 15.6 inch - 8GB - 512GB SSD - Black - NH.QBAEH.004",
+         "main":{
+            "cpu_type":"AMD Ryzen 5",
+            "cpu_implementation":"5600H",
+            "cpu_number_of_cores":6,
+            "display_size__inch":15.6,
+            "memory_ram__gb":8,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Black"
+         }
+      },
+      {
+         "id":2175,
+         "name":"Microsoft Surface 4 4680U",
+         "mpn":"7IQ-00032",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/07f41ab991f87b9cd2123cba9e387942.jpg",
+         "price":{
+            "price":1264,
+            "old_price":null,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/microsoft-surface-laptop-4-4680u-notebook-34-3-cm-touchscreen-amd-ryzen-5-16-gb-lpddr4x-sdram-256-gb-ssd-wi-fi-6-windows-10-pro-zwart/9300000055447011/"
+         },
+         "info":"AMD Ryzen™ 5 - 4680U - 4 cores - 13.5 inch - 16GB - 256GB SSD - Matte Black - 7IQ-00032",
+         "main":{
+            "cpu_type":"AMD Ryzen™ 5",
+            "cpu_implementation":"4680U",
+            "cpu_number_of_cores":4,
+            "display_size__inch":13.5,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":256,
+            "design_color_name":"Matte Black"
+         }
+      },
+      {
+         "id":4150,
+         "name":"HP ZBook Power G8",
+         "mpn":"525H5EA#ABH",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/5ff298a918fa51177eb867d163c79cb5.jpg",
+         "price":{
+            "price":2914,
+            "old_price":2868.35,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/hp-zbook-power-g8-mobile-workstation-intel-core-i9-11900h-2-5-ghz/4695942"
+         },
+         "info":"Intel® Core™ i9 - i9-11900H - 8 cores - 15.6 inch - 32GB - 1000GB SSD - Gray - 525H5EA#ABH",
+         "main":{
+            "cpu_type":"Intel® Core™ i9",
+            "cpu_implementation":"i9-11900H",
+            "cpu_number_of_cores":8,
+            "display_size__inch":15.6,
+            "memory_ram__gb":32,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Gray"
+         }
+      },
+      {
+         "id":4173,
+         "name":"Asus VIVOBOOK 15 K513EA",
+         "mpn":"90NB0SG2-M54150",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/3bd3fd0daf760e62fea12d77bb452082.jpg",
+         "price":{
+            "price":1206.3,
+            "old_price":1206.44,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/asus-vivobook-15-k513ea-l11387w-laptop/4672066"
+         },
+         "info":"Intel® Core™ i7 - i7-1165G7 - 4 cores - 15.6 inch - 16GB - 1000GB SSD - Transparent Silver - 90NB0SG2-M54150",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-1165G7",
+            "cpu_number_of_cores":4,
+            "display_size__inch":15.6,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Transparent Silver"
+         }
+      },
+      {
+         "id":2796,
+         "name":"Acer-Persprator Helios 300 PH315-53-785U",
+         "mpn":"NH.QATEF.001",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/64a2eca02ca86b9d4f36a951b4b5570a.jpg",
+         "price":{
+            "price":1538.48,
+            "old_price":1905.43,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/gaming-laptop-pc-acer-predator-helios-300-ph315-53-785u-15-6fhd-144hz-i7-10750h-16gb-voorraad-512go-ssd-rtx3070-w10-azerty/9300000071284458/"
+         },
+         "info":"Intel Core i7 - I7-10750H - 15.6 inch - 16GB - 512GB SSD - Black - NH.QATEF.001",
+         "main":{
+            "cpu_type":"Intel Core i7",
+            "cpu_implementation":"I7-10750H",
+            "display_size__inch":15.6,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Black"
+         }
+      },
+      {
+         "id":4146,
+         "name":"Asus VIVOBOOK 15 S513EA",
+         "mpn":"90NB0SG1-M006L0",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/41b26578ca7ee2135cb54ba3173629f6.jpg",
+         "price":{
+            "price":914.51,
+            "old_price":914.64,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/asus-vivobook-15-s513ea-bn2831w-laptop/4643186"
+         },
+         "info":"Intel® Core™ i7 - i7-1165G7 - 4 cores - 15.6 inch - 8GB - 512GB SSD - Indie Black - 90NB0SG1-M006L0",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-1165G7",
+            "cpu_number_of_cores":4,
+            "display_size__inch":15.6,
+            "memory_ram__gb":8,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Indie Black"
+         }
+      },
+      {
+         "id":701,
+         "name":"Lenovo Legion 5 Pro 16 WQXGA",
+         "mpn":"82RF00Q4MH",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/9cb62ef521f8becc6a5cad330121c266.jpg",
+         "price":{
+            "price":2204.06,
+            "old_price":2249,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/lenovo-legion-5-pro-laptop-16-wqxga-intel-core-i7-16-gb-ddr5-sdram-1-tb-ssd-nvidia-geforce-rtx-3070-wi-fi-6e-windows-11-home-grijs/9300000124325800/"
+         },
+         "info":"Intel® Core™ i7 - i7-12700H - 14 cores - 16 inch - 16GB - 1000GB SSD - Storm Grey - 82RF00Q4MH",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-12700H",
+            "cpu_number_of_cores":14,
+            "display_size__inch":16,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Storm Grey"
+         }
+      },
+      {
+         "id":2176,
+         "name":"Dell Latitude 7390",
+         "mpn":"Latitude7390/BEL",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/b5a679f4372634f107702d3a81adcbca.jpg",
+         "price":{
+            "price":null,
+            "old_price":399,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/dell-latitude-7390-notebook-33-8-cm-full-hd-touchscreen-intel-core-i7-8-gb-ram-256-gb-ssd-windows-10-pro/9300000127262408/"
+         },
+         "info":"Intel Core i7 - Core i7-8350U - 13.3 inch - 8GB - 256GB SSD - black - Latitude7390/BEL",
+         "main":{
+            "cpu_type":"Intel Core i7",
+            "cpu_implementation":"Core i7-8350U",
+            "display_size__inch":13.3,
+            "memory_ram__gb":8,
+            "storage_type":"SSD",
+            "storage_capacity__gb":256,
+            "design_color_name":"black"
+         }
+      },
+      {
+         "id":6201,
+         "name":"HP ZFLY14G9",
+         "mpn":"6B8J0EA#ABH",
+         "price":{
+            "price":2494.06,
+            "old_price":2499.09,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/hp-zfly14g9-i7-1255u-32-1tb-14in-w11p/5069500"
+         },
+         "info":"Intel® Core™ i7 - 10 cores - 14 inch - 32GB - 1000GB SSD - 6B8J0EA#ABH",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_number_of_cores":10,
+            "display_size__inch":14,
+            "memory_ram__gb":32,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000
+         }
+      },
+      {
+         "id":6203,
+         "name":"HP Envy 17-C1290ND",
+         "mpn":"54K90EA#ABH",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/67d0a86c4997adc31ad943697943cd05.jpg",
+         "price":{
+            "price":null,
+            "old_price":null,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/hp-envy-17-ch1290nd-creator-laptop-17-3-inch/9300000050067510/"
+         },
+         "info":"2021 - Intel Core i7 - i7-1195G7 - 4 cores - 17.3 inch - 16GB - 1000GB SSD - Silver - 54K90EA#ABH",
+         "main":{
+            "general_year":2021,
+            "cpu_type":"Intel Core i7",
+            "cpu_implementation":"i7-1195G7",
+            "cpu_number_of_cores":4,
+            "display_size__inch":17.3,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Silver"
+         }
+      },
+      {
+         "id":702,
+         "name":"Acer Nitro 5 AN515-55-56YU Gaming",
+         "mpn":"AN515-55-56YU",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/4765c412c7cf9d190c74baac0eec5c6a.jpg",
+         "price":{
+            "price":943.6,
+            "old_price":942.9,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/acer-nitro-5-an515-55-56yu-gaming-laptop-i5-10300h-nvidia-geforce-rtx-3050-512-gb/9300000073663972/"
+         },
+         "info":"Intel Core i5 - 10300H - 15.6 inch - 16GB - 512GB SSD - Black - AN515-55-56YU",
+         "main":{
+            "cpu_type":"Intel Core i5",
+            "cpu_implementation":"10300H",
+            "display_size__inch":15.6,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Black"
+         }
+      },
+      {
+         "id":704,
+         "name":"Dynabook Satellite Pro L50-G-17Z Black",
+         "mpn":"PBS12E-059026BT",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/c63f300210c0bf0eeacfdb9ce58ace05.jpg",
+         "price":{
+            "price":482.65,
+            "old_price":488.73,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/dynabook-satellite-pro-l50-g-17z-notebook-zwart-39-6-cm-1920-x-1080-pixels-intel-10de-generatie-core-i7-16-gb-ddr4-sdram-512-gb-ssd-wi-fi-6-windows-10-pro/9200000127090689/"
+         },
+         "info":"Intel® Core™ i7 - i7-10510U - 4 cores - 15.6 inch - 16GB - 512GB SSD - Black - PBS12E-059026BT",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-10510U",
+            "cpu_number_of_cores":4,
+            "display_size__inch":15.6,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Black"
+         }
+      },
+      {
+         "id":2937,
+         "name":"HP 470 G9 FullHD",
+         "mpn":"24619",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/d07ab58c0adf045c2616e4d1c4649779.jpg",
+         "price":{
+            "price":1219,
+            "old_price":1239,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/hp-470-g9-fullhd-17-3-laptop-intel-core-i5-1235u-32gb-1-0tb-windows-11-pro/9300000132198808/"
+         },
+         "info":"Intel Core i5 - 1235U - 10 cores - 17.3 inch - 32GB - 1000GB SSD - Silver - 24619",
+         "main":{
+            "cpu_type":"Intel Core i5",
+            "cpu_implementation":"1235U",
+            "cpu_number_of_cores":10,
+            "display_size__inch":17.3,
+            "memory_ram__gb":32,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Silver"
+         }
+      },
+      {
+         "id":4221,
+         "name":"Lenovo ThinkBook 13x ITG 20WJ",
+         "mpn":"20WJ004FMH",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/6a8613702814bb9a105d9ca202af8652.jpg",
+         "price":{
+            "price":1179,
+            "old_price":1609.18,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/lenovo-thinkbook-13x-itg-20wj-intel-core-i7-1160g7-2-1-ghz/4636836"
+         },
+         "info":"Intel® Core™ i7 - i7-1160G7 - 4 cores - 13.3 inch - 16GB - 512GB SSD - Storm grey - 20WJ004FMH",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-1160G7",
+            "cpu_number_of_cores":4,
+            "display_size__inch":13.3,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Storm grey"
+         }
+      },
+      {
+         "id":705,
+         "name":"Asus TUF A15 FA507RC-HN082W",
+         "mpn":"90NR09R1-M00580",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/51b552d6781e1f4e86bbfe2e33d8e0d1.jpg",
+         "price":{
+            "price":1319,
+            "old_price":1399,
+            "currency":"EUR",
+            "url":"https://www.bol.com/be/nl/p/asus-tuf-a15-fa507rc-hn082w-gaming-laptop-15-6-inch/9300000073587813/"
+         },
+         "info":"AMD Ryzen 7 - 6800H - 8 cores - 15.6 inch - 16GB - 1000GB SSD - Black | Gray - 90NR09R1-M00580",
+         "main":{
+            "cpu_type":"AMD Ryzen 7",
+            "cpu_implementation":"6800H",
+            "cpu_number_of_cores":8,
+            "display_size__inch":15.6,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":1000,
+            "design_color_name":"Black | Gray"
+         }
+      },
+      {
+         "id":4219,
+         "name":"Dell Latitude 5520",
+         "mpn":"Y2XPM",
+         "image":"https://devices-api-prd.s3.eu-west-3.amazonaws.com/7276e4250be1d943fb1fd37e652d8ef1.jpg",
+         "price":{
+            "price":1652.92,
+            "old_price":1647.86,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/dell-latitude-5520-intel-core-i7-1185g7-3-ghz/4639033"
+         },
+         "info":"Intel® Core™ i7 - i7-1185G7 - 4 cores - 15.6 inch - 16GB - 512GB SSD - Gray - Y2XPM",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-1185G7",
+            "cpu_number_of_cores":4,
+            "display_size__inch":15.6,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Gray"
+         }
+      },
+      {
+         "id":2375,
+         "name":"Dell Precision 5470",
+         "mpn":"F04R9",
+         "price":{
+            "price":3630.18,
+            "old_price":3900.89,
+            "currency":"EUR",
+            "url":"https://azerty.nl/product/nb-dell-precision-5470-14-0-fhd-i7-w10p-w11p-i7-12800h-512gbssd-16gb-a1000-ir-wl-bl-3yps/4974571"
+         },
+         "info":"Intel® Core™ i7 - i7-12800H - 14 cores - 14 inch - 16GB - 512GB SSD - Gray - F04R9",
+         "main":{
+            "cpu_type":"Intel® Core™ i7",
+            "cpu_implementation":"i7-12800H",
+            "cpu_number_of_cores":14,
+            "display_size__inch":14,
+            "memory_ram__gb":16,
+            "storage_type":"SSD",
+            "storage_capacity__gb":512,
+            "design_color_name":"Gray"
+         }
+      }
+   ]
+}
