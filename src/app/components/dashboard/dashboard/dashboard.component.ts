@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { AuthService } from '../../shared/services/auth.service';
+import { AuthService } from "../../../services/auth-service/auth.service";
 
 @Component({
   selector: 'app-dashboard',

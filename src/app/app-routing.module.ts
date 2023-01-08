@@ -5,9 +5,9 @@ import { UserProfileComponent } from './components/dashboard/user-profile/user-p
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ProductsComponent } from './components/products/products.component';
+import { ProductsComponent } from './components/dashboard/products/products/products.component';
 import { RegisterComponent } from './components/register/register.component';
-import { AuthGuard } from './components/shared/guard/auth.guard';
+import { AuthGuard } from './services/auth-guard/auth.guard';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 const routes: Routes = [

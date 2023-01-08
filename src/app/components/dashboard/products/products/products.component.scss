@@ -1,5 +1,5 @@
 mat-sidenav-content mat-card {
-  margin: 16px;
+  margin: 0px;
 }
 
 mat-sidenav-content::-webkit-scrollbar {
@@ -14,4 +14,7 @@ mat-sidenav-content::-webkit-scrollbar-track {
 }
 mat-sidenav-content p.center {
   text-align: center;
+}
+.green-icon {
+  color: green;
 }

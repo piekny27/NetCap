@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../../shared/services/auth.service';
+import { AuthService } from "../../../../services/auth-service/auth.service";
 
 @Component({
   selector: 'app-user-profile',

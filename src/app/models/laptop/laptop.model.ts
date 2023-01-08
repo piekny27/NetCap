@@ -4,11 +4,11 @@ import { Price } from "../price/price";
 export class Laptop {
   key?: string | null;
   id?: number;
-  images?: string[];
+  image?: string;
   info?: string;
   main?: LaptopDetails;
   mpn?: string;
   name?: string;
-  prices?: Price[];
+  price?: Price;
   published?: boolean;
 }

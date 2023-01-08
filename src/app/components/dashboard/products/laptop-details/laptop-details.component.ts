@@ -40,12 +40,12 @@ export class LaptopDetailsComponent implements OnInit {
   updateLaptop(): void {
     const data = {
       key: this.currentLaptop.key,
-      images: this.currentLaptop.images,
+      image: this.currentLaptop.image,
       info: this.currentLaptop.info,
       main: this.currentLaptop.main,
       mpn: this.currentLaptop.mpn,
       name: this.currentLaptop.name,
-      prices: this.currentLaptop.prices,
+      price: this.currentLaptop.price,
     };
 
     if (this.currentLaptop.key) {

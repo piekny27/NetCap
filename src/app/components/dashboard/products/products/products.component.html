@@ -3,7 +3,7 @@
     <mat-card>
       <mat-selection-list [multiple]="false">
         <mat-list-option *ngFor="let laptop of laptops; let i = index" (click)="setActiveLaptop(laptop, i)">
-          <mat-icon matListItemIcon>laptop_mac</mat-icon>
+          <mat-icon [ngClass]="{'green-icon': laptop.published === true}" matListItemIcon>laptop_mac</mat-icon>
           <div matListItemTitle>{{ laptop.name }}</div>
         </mat-list-option>
       </mat-selection-list>

@@ -1,0 +1,122 @@
+<form>
+  <mat-card-content>
+    <div class="form-group">
+      <label><strong>Status:</strong> {{ currentLaptop.published ? "Published" : "Pending" }}</label>
+    </div>
+    <mat-divider style="margin-bottom: 15px;"></mat-divider>
+    <button mat-stroked-button color="primary" *ngIf="currentLaptop.published" (click)="updatePublished(false)">UnPublish</button>
+    <button mat-stroked-button color="primary" *ngIf="!currentLaptop.published" (click)="updatePublished(true)">Publish</button>
+    <button mat-stroked-button color="primary" type="submit" (click)="updateLaptop()">Update</button>
+    <button mat-stroked-button color="warn" (click)="deleteLaptop()">Delete</button>
+    <mat-divider style="margin: 15px 0;"></mat-divider>
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Photo
+          </mat-panel-title>
+          <mat-panel-description>
+            Image with laptop
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-divider style="margin-bottom: 15px;"></mat-divider>
+        <img style="height: auto;max-width:100%;max-height:100%; margin-bottom:10px" src="{{currentLaptop.image}}" alt="Missing photo">
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="mpn">Image</mat-label>
+          <input matInput type="text" matInput id="image" [(ngModel)]="currentLaptop.image" name="image" />
+        </mat-form-field>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Price
+          </mat-panel-title>
+          <mat-panel-description>
+            Price and auction
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-divider style="margin-bottom: 15px;"></mat-divider>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="currency">Currency</mat-label>
+          <input matInput type="text" matInput id="currency" [(ngModel)]="currentLaptop.price!.currency" name="currency" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="price">Price</mat-label>
+          <input matInput type="text" matInput id="price" [(ngModel)]="currentLaptop.price!.old_price" name="price" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="url">Auction</mat-label>
+          <input matInput type="text" matInput id="url" [(ngModel)]="currentLaptop.price!.url" name="url" />
+        </mat-form-field>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Main
+          </mat-panel-title>
+          <mat-panel-description>
+            Basic laptop specifics
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-divider style="margin-bottom: 15px;"></mat-divider>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="name">Name</mat-label>
+          <input matInput type="text" matInput id="name" [(ngModel)]="currentLaptop.name" name="name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="info">Info</mat-label>
+          <input matInput type="text" matInput id="info" [(ngModel)]="currentLaptop.info" name="info" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="mpn">MPN</mat-label>
+          <input matInput type="text" matInput id="mpn" [(ngModel)]="currentLaptop.mpn" name="mpn" />
+        </mat-form-field>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Advanced
+          </mat-panel-title>
+          <mat-panel-description>
+            Advanced specs
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-divider style="margin-bottom: 15px;"></mat-divider>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="cpu_implementation">CPU Implementation</mat-label>
+          <input matInput type="text" matInput id="cpu_implementation" [(ngModel)]="currentLaptop.main!.cpu_implementation"
+            name="cpu_implementation" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-label for="cpu_number_of_cores">CPU Number of Cores</mat-label>
+          <input matInput type="text" matInput id="cpu_number_of_cores" [(ngModel)]="currentLaptop.main!.cpu_number_of_cores"
+            name="cpu_number_of_cores" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="cpu_type">CPU Type</mat-label>
+          <input matInput type="text" matInput id="cpu_type" [(ngModel)]="currentLaptop.main!.cpu_type" name="cpu_type" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="design_color_name">Design Color Name</mat-label>
+          <input matInput type="text" matInput id="design_color_name" [(ngModel)]="currentLaptop.main!.design_color_name" name="design_color_name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="display_size__inch">Display Size Inch</mat-label>
+          <input matInput type="text" matInput id="display_size__inch" [(ngModel)]="currentLaptop.main!.display_size__inch" name="display_size__inch" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="memory_ram__gb">Memory RAM GB</mat-label>
+          <input matInput type="text" matInput id="memory_ram__gb" [(ngModel)]="currentLaptop.main!.memory_ram__gb" name="memory_ram__gb" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="storage_capacity__gb">Storage Capacity GB</mat-label>
+          <input matInput type="text" matInput id="storage_capacity__gb" [(ngModel)]="currentLaptop.main!.storage_capacity__gb" name="storage_capacity__gb" />
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label for="storage_type">Storage Type</mat-label>
+          <input matInput type="text" matInput id="storage_type" [(ngModel)]="currentLaptop.main!.storage_type" name="storage_type" />
+        </mat-form-field>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card-content>
+</form>

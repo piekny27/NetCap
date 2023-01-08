@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { ProductsComponent } from './components/products/products.component';
+import { ProductsComponent } from './components/dashboard/products/products/products.component';
 import { UserProfileComponent } from './components/dashboard/user-profile/user-profile/user-profile.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
@@ -15,11 +15,11 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { LoginComponent } from './components/login/login.component';
 
-import { AuthService } from "./components/shared/services/auth.service";
+import { AuthService } from "./services/auth-service/auth.service";
 import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from '././components/dashboard/dashboard/dashboard.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { LaptopDetailsComponent } from './components/laptop-details/laptop-details.component';
+import { LaptopDetailsComponent } from './components/dashboard/products/laptop-details/laptop-details.component';
 
 import { FormsModule } from '@angular/forms';
 
