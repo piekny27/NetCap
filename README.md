@@ -2,7 +2,6 @@
 <br><br>
 <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></a>
 <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"></a>
-<a href="#" onclick="return false;"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"></a>
 <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white"></a>
 
 ### An online store project based on Angular with Firebase authentication. <br>
@@ -78,5 +77,3 @@ import { environment } from '../environments/environment';
 
 [Node.js](https://nodejs.org/)<br>
 [Angular CLI](https://github.com/angular/angular-cli)<br>
-[NG Bootstrap](https://ng-bootstrap.github.io/#/home)<br>
-
