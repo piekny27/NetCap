@@ -7,27 +7,28 @@ import {
   AngularFirestoreDocument,
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
+import { Roles } from './roles';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   userData: any;
-  constructor(    
-    public afs: AngularFirestore, 
-    public afAuth: AngularFireAuth, 
+  constructor(
+    public afs: AngularFirestore,
+    public afAuth: AngularFireAuth,
     public router: Router,
-    public ngZone: NgZone) { 
-      this.afAuth.authState.subscribe((user) => {
-        if (user) {
-          this.userData = user;
-          localStorage.setItem('user', JSON.stringify(this.userData));
-          JSON.parse(localStorage.getItem('user')!);
-        } else {
-          localStorage.setItem('user', 'null');
-          JSON.parse(localStorage.getItem('user')!);
-        }
-      });
+    public ngZone: NgZone) {
+    this.afAuth.authState.subscribe((user) => {
+      if (user) {
+        this.userData = user;
+        localStorage.setItem('user', JSON.stringify(this.userData));
+        JSON.parse(localStorage.getItem('user')!);
+      } else {
+        localStorage.setItem('user', 'null');
+        JSON.parse(localStorage.getItem('user')!);
+      }
+    });
   }
   // Sign in with email/password
   SignIn(email: string, password: string) {
@@ -114,6 +115,9 @@ export class AuthService {
       displayName: user.displayName,
       photoURL: user.photoURL,
       emailVerified: user.emailVerified,
+      roles: {
+        subscriber: true
+      }
     };
     return userRef.set(userData, {
       merge: true,
@@ -125,5 +129,41 @@ export class AuthService {
       localStorage.removeItem('user');
       this.router.navigate(['home']);
     });
+  }
+
+  // Role-based authorization
+
+  canRead(user: User): boolean {
+    const allowed = ['admin', 'editor', 'subscriber']
+    return this.checkAuthorization(user, allowed)
+  }
+
+  canEdit(user: User): boolean {
+    const allowed = ['admin', 'editor']
+    return this.checkAuthorization(user, allowed)
+  }
+
+  canDelete(user: User): boolean {
+    const allowed = ['admin']
+    return this.checkAuthorization(user, allowed)
+  }
+
+  // Determines if user has matching role
+  private checkAuthorization(user: User, allowedRoles: string[]): boolean {
+    if (!user) return false
+    for (const role of allowedRoles) {
+      if (user.roles[role as keyof Roles]) {
+        return true
+      }
+    }
+    return false
+  }
+
+  public getRoles(user: User): string{
+    var out = ""
+    if(user.roles.admin) out += "Admin "
+    if(user.roles.editor) out += "Editor "
+    if(user.roles.subscriber) out += "Subscriber "
+    return out
   }
 }
