@@ -6,44 +6,44 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-  tutorials?: Laptop[];
-  currentTutorial?: Laptop;
+  laptops?: Laptop[];
+  currentLaptop?: Laptop;
   currentIndex = -1;
   title = '';
 
-  constructor(private tutorialService: LaptopService) { }
+  constructor(private laptopService: LaptopService) { }
 
   ngOnInit(): void {
-    this.retrieveTutorials();
+    this.retrieveLaptops();
   }
 
   refreshList(): void {
-    this.currentTutorial = undefined;
+    this.currentLaptop = undefined;
     this.currentIndex = -1;
-    this.retrieveTutorials();
+    this.retrieveLaptops();
   }
 
-  retrieveTutorials(): void {
-    this.tutorialService.getAll().snapshotChanges().pipe(
+  retrieveLaptops(): void {
+    this.laptopService.getAll().snapshotChanges().pipe(
       map(changes =>
         changes.map(c =>
           ({ key: c.payload.key, ...c.payload.val() })
         )
       )
     ).subscribe(data => {
-      this.tutorials = data;
+      this.laptops = data;
     });
   }
-  setActiveTutorial(tutorial: Laptop, index: number): void {
-    this.currentTutorial = tutorial;
+  setActiveLaptop(laptop: Laptop, index: number): void {
+    this.currentLaptop = laptop;
     this.currentIndex = index;
   }
 
-  removeAllTutorials(): void {
-    this.tutorialService.deleteAll()
+  removeAllLaptops(): void {
+    this.laptopService.deleteAll()
       .then(() => this.refreshList())
       .catch(err => console.log(err));
   }

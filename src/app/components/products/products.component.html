@@ -1,32 +1,21 @@
-<div class="list row">
-  <div class="col-md-6">
-    <h4>Laptops list</h4>
-    <ul class="list-group">
-      <li
-        class="list-group-item"
-        *ngFor="let tutorial of tutorials; let i = index"
-        [class.active]="i == currentIndex"
-        (click)="setActiveTutorial(tutorial, i)"
-      >
-        {{ tutorial.name }}
-      </li>
-    </ul>
-
-    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTutorials()">
-      Remove All
-    </button>
-  </div>
-  <div class="col-md-6">
-    <div *ngIf="currentTutorial">
-      <app-laptop-details
-        (refreshList)="refreshList()"
-        [tutorial]="currentTutorial"
-      ></app-laptop-details>
-    </div>
-
-    <div *ngIf="!currentTutorial">
-      <br />
-      <p>Please click on a laptop...</p>
-    </div>
-  </div>
-</div>
+<mat-sidenav-container style="display: flex; justify-content: space-between; align-items: flex-start">
+  <mat-sidenav-content style="width: 50%; overflow-y: auto; height: 70vh">
+    <mat-card>
+      <mat-selection-list [multiple]="false">
+        <mat-list-option *ngFor="let laptop of laptops; let i = index" (click)="setActiveLaptop(laptop, i)">
+          <mat-icon matListItemIcon>laptop_mac</mat-icon>
+          <div matListItemTitle>{{ laptop.name }}</div>
+        </mat-list-option>
+      </mat-selection-list>
+      </mat-card>
+  </mat-sidenav-content>
+  <mat-sidenav-content style="width: 50%">
+    <mat-card *ngIf="currentLaptop">
+      <app-laptop-details (refreshList)="refreshList()" [laptop]="currentLaptop"></app-laptop-details>
+    </mat-card>
+    <mat-card *ngIf="!currentLaptop">
+      <br/>
+      <p class="center">Please click on a laptop...</p>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

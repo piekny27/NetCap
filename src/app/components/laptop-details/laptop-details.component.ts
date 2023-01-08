@@ -5,19 +5,17 @@ import { LaptopService } from 'src/app/services/laptop-service/laptop.service';
 @Component({
   selector: 'app-laptop-details',
   templateUrl: './laptop-details.component.html',
-  styleUrls: ['./laptop-details.component.css']
+  styleUrls: ['./laptop-details.component.scss']
 })
 export class LaptopDetailsComponent implements OnInit {
-  @Input() tutorial?: Laptop;
+  @Input() laptop?: Laptop;
   @Output() refreshList: EventEmitter<any> = new EventEmitter();
-  currentTutorial: Laptop = {
-    title: '',
-    description: '',
+  currentLaptop: Laptop = {
     published: false
   };
   message = '';
 
-  constructor(private tutorialService: LaptopService) { }
+  constructor(private laptopService: LaptopService) { }
 
   ngOnInit(): void {
     this.message = '';
@@ -25,39 +23,44 @@ export class LaptopDetailsComponent implements OnInit {
 
   ngOnChanges(): void {
     this.message = '';
-    this.currentTutorial = { ...this.tutorial };
+    this.currentLaptop = { ...this.laptop };
   }
 
   updatePublished(status: boolean): void {
-    if (this.currentTutorial.key) {
-      this.tutorialService.update(this.currentTutorial.key, { published: status })
+    if (this.currentLaptop.key) {
+      this.laptopService.update(this.currentLaptop.key, { published: status })
       .then(() => {
-        this.currentTutorial.published = status;
+        this.currentLaptop.published = status;
         this.message = 'The status was updated successfully!';
       })
       .catch(err => console.log(err));
     }
   }
 
-  updateTutorial(): void {
+  updateLaptop(): void {
     const data = {
-      title: this.currentTutorial.title,
-      description: this.currentTutorial.description
+      key: this.currentLaptop.key,
+      images: this.currentLaptop.images,
+      info: this.currentLaptop.info,
+      main: this.currentLaptop.main,
+      mpn: this.currentLaptop.mpn,
+      name: this.currentLaptop.name,
+      prices: this.currentLaptop.prices,
     };
 
-    if (this.currentTutorial.key) {
-      this.tutorialService.update(this.currentTutorial.key, data)
-        .then(() => this.message = 'The tutorial was updated successfully!')
+    if (this.currentLaptop.key) {
+      this.laptopService.update(this.currentLaptop.key, data)
+        .then(() => this.message = 'The laptop was updated successfully!')
         .catch(err => console.log(err));
     }
   }
 
-  deleteTutorial(): void {
-    if (this.currentTutorial.key) {
-      this.tutorialService.delete(this.currentTutorial.key)
+  deleteLaptop(): void {
+    if (this.currentLaptop.key) {
+      this.laptopService.delete(this.currentLaptop.key)
         .then(() => {
           this.refreshList.emit();
-          this.message = 'The tutorial was updated successfully!';
+          this.message = 'The laptop was updated successfully!';
         })
         .catch(err => console.log(err));
     }

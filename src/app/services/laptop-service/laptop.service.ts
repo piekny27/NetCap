@@ -8,29 +8,29 @@ import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/datab
 export class LaptopService {
   private dbPath = '/laptops';
 
-  tutorialsRef: AngularFireList<Laptop>;
+  laptopsRef: AngularFireList<Laptop>;
 
   constructor(private db: AngularFireDatabase) {
-    this.tutorialsRef = db.list(this.dbPath);
+    this.laptopsRef = db.list(this.dbPath);
   }
 
   getAll(): AngularFireList<Laptop> {
-    return this.tutorialsRef;
+    return this.laptopsRef;
   }
 
-  create(tutorial: Laptop): any {
-    return this.tutorialsRef.push(tutorial);
+  create(laptop: Laptop): any {
+    return this.laptopsRef.push(laptop);
   }
 
   update(key: string, value: any): Promise<void> {
-    return this.tutorialsRef.update(key, value);
+    return this.laptopsRef.update(key, value);
   }
 
   delete(key: string): Promise<void> {
-    return this.tutorialsRef.remove(key);
+    return this.laptopsRef.remove(key);
   }
 
   deleteAll(): Promise<void> {
-    return this.tutorialsRef.remove();
+    return this.laptopsRef.remove();
   }
 }
