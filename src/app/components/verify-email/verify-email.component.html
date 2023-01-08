@@ -16,7 +16,11 @@
         </div>
       </div>
       <div class="redirectToLogin">
-        <span>Go back to?<span class="redirect" [routerLink]="['/login']"> Sign in</span></span>
+        <button type="button" class="btn btnGoback" (click)="goBack()">
+          <i class="fas fa-angle-left"></i>
+          Go Back
+        </button>
+        <!-- <span>Go back to?<span class="redirect" [routerLink]="['/login']"> Sign in</span></span> -->
       </div>
     </div>
 </div>

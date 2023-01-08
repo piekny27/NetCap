@@ -12,6 +12,21 @@
     }
 }
 
+#myBtn {
+  border: none; 
+  outline: none; 
+  background-color: rgb(46, 141, 70); 
+  color: white; 
+  cursor: pointer; 
+  padding: 0.8rem;
+  border-radius: 10px; 
+  font-size: 3rem; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
 .b-example-divider {
     height: 3rem;
     background-color: rgba(0, 0, 0, .1);
@@ -78,4 +93,8 @@
 
   .card-text {
     color: #000;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
   }

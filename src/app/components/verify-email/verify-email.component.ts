@@ -1,4 +1,5 @@
 import { Component, OnInit  } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from "../../components/shared/services/auth.service";
 
 @Component({
@@ -8,8 +9,12 @@ import { AuthService } from "../../components/shared/services/auth.service";
 })
 export class VerifyEmailComponent implements OnInit {
   constructor(
+    public router: Router,
     public authService: AuthService
   ) { }
   ngOnInit() {
   }
+  goBack(){
+    this.router.navigate(['home']);
+ }
 }

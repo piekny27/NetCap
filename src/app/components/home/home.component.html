@@ -1,22 +1,27 @@
 <div class="text-bg-dark">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <mat-toolbar color="primary">
+    <span>
+      <a [routerLink]="['/home']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
+    </span>
+      <div class="spacer"></div>
+    <a mat-button [routerLink]="['/home']">Shop</a>
+    <a mat-button [routerLink]="['/dashboard']">Dashboard</a>
+    <a mat-button [routerLink]="['/login']">Log In</a>
+    <a mat-button [routerLink]="['/register']">Sign Up</a>
+  </mat-toolbar>
+  <!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div>
-        <a [routerLink]="['/']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
-        <!-- <h3 class="float-md-start mb-0">NetCap</h3> -->
+        <a [routerLink]="['/home']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
         <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" [routerLink]="['/home']">Shop</a>
           <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/dashboard']">Dashboard</a>
-          <a
-            class="nav-link fw-bold py-1 px-0 active"
-            aria-current="page"
-            href="products.html"
-            >Products
-            </a>
-          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/login']"> Log In</a>
+          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/login']">Log In</a>
+          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/register']">Sign Up</a>
         </nav>
       </div>
     </header>
-  </div>
+  </div> -->
 
   <main>
     <section class="py-5 text-center container">
@@ -96,7 +101,7 @@
   <footer class="py-5">
     <div class="container">
       <p class="float-end mb-1">
-        <a href="#">Back to top</a>
+        <button (click)="gotoTop()" id="myBtn"><mat-icon>keyboard_arrow_up</mat-icon></button>
       </p>
       <p class="mb-0">
         For more information, please visit our newsletter.

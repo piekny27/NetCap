@@ -182,6 +182,10 @@ input:-moz-placeholder {
   background: #4dd5fe;
 }
 
+.displayTable .btnGoback {
+  background: #1351c4;
+}
+
 .or {
   text-align: center;
   display: block;
@@ -238,6 +242,8 @@ input:-moz-placeholder {
 }
 
 .redirectToLogin {
+  margin: 0 auto;
+  max-width: 200px;
   padding: 15px 0 0;
   text-align: center;
   font-size: 14px;
