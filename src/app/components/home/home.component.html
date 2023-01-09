@@ -1,4 +1,3 @@
-<div class="text-bg-dark">
   <mat-toolbar color="primary">
     <span>
       <a [routerLink]="['/home']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
@@ -9,103 +8,32 @@
     <a mat-button [routerLink]="['/login']">Log In</a>
     <a mat-button [routerLink]="['/register']">Sign Up</a>
   </mat-toolbar>
-  <!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto">
-      <div>
-        <a [routerLink]="['/home']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" [routerLink]="['/home']">Shop</a>
-          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/dashboard']">Dashboard</a>
-          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/login']">Log In</a>
-          <a class="nav-link fw-bold py-1 px-0" [routerLink]="['/register']">Sign Up</a>
-        </nav>
-      </div>
-    </header>
-  </div> -->
-
-  <main>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Laptop catalog</h1>
-          <p class="lead">
-            Welcome to the laptop zone.<br />First see then buy.
-          </p>
-          <p class="lead">
-            Familiarize yourself with our rich offer! Each laptop is prepared by a super qualified technician. Nothing more nothing less!
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg
-                class="bd-placeholder-img card-img-top"
-                width="100%"
-                height="225"
-                xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-label="Placeholder: Thumbnail"
-                preserveAspectRatio="xMidYMid slice"
-                focusable="false"
-              >
-                <title>Placeholder</title>
-                <image
-                  href="https://a.allegroimg.com/s360/11e6b7/f4a613da445e9816450266dbc2ce/BUTY-MESKIE-4F-TREKKINGOWE-WODOODPORNE-ZIMOWE-R-42"
-                  height="100%"
-                  width="100%"
-                />
-              </svg>
-
-              <div class="card-body">
-                <p class="card-text">
-                  <b>Numer artykułu:</b> 1372879 <br />
-                  <b>Kolor:</b> beżowy <br />
-                  <b>Materiał wierzchni:</b> materiał syntetyczny (PU) <br />
-                  <b>Wnętrze buta:</b> materiał tekstylny <br />
-                  <b>Podeszwa:</b> materiał syntetyczny <br />
-                  sznurowane <br />
-                  ocieplane <br />
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Zobacz
-                    </button>
-                    <button
-                      type="button"
-                      class="btn btn-sm btn-outline-secondary"
-                    >
-                      Kup
-                    </button>
-                  </div>
-                  <small class="text-muted">Pozostało 3</small>
-                </div>
-              </div>
+  
+  <div class="laptopList">
+    <div class="containerlap">
+      <mat-card class="laptop-card" *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]">
+          <mat-card-header>
+            <mat-card-title><div class="titlebox">title</div></mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="https://devices-api-prd.s3.eu-west-3.amazonaws.com/52a82d5610a9293c3efbb7668f256503.jpg" alt="Laptop" style="padding: 1rem;">
+          <mat-card-content style="padding-bottom: 1rem;">
+            <div class="price">
+              <p>Price: </p>
             </div>
-          </div>
-          
-        </div>
-      </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>BUY NOW</button>
+          </mat-card-actions>
+        </mat-card>
     </div>
-  </main>
+  </div>
+    
 
-  <footer class="py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <button (click)="gotoTop()" id="myBtn"><mat-icon>keyboard_arrow_up</mat-icon></button>
-      </p>
-      <p class="mb-0">
-        For more information, please visit our newsletter.
-      </p>
+  <div class="footer">
+    <div class="footerText">
+      For more information, please visit our newsletter.
     </div>
-  </footer>
-</div>
+        <div class="buttonUp">
+          <button (click)="gotoTop()" id="myBtn"><mat-icon>keyboard_arrow_up</mat-icon></button>
+        </div>
+  </div>
