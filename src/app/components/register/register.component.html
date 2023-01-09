@@ -1,53 +1,34 @@
-<div class="displayTable">
-    <div class="displayTableCell">
-      <div class="authBlock">
-        <div class="text-center">
-        <a [routerLink]="['/']"><img src="/assets/images/logomini.png" alt="Logo" style="height: 3.5rem; margin-bottom: 1.5rem;"></a>
-      </div>
-        <h3>Sign Up to NetCap</h3>
-        <div class="formGroup">
-          <input
-            type="email"
-            class="formControl"
-            placeholder="Email Address"
-            #userEmail
-            required
-          />
-        </div>
-        <div class="formGroup">
-          <input
-            type="password"
-            class="formControl"
-            placeholder="Password"
-            #userPwd
-            required
-          />
-        </div>
-        <div class="formGroup">
-          <input
-            type="button"
-            class="btn btnPrimary"
-            value="Sign Up"
-            (click)="authService.SignUp(userEmail.value, userPwd.value)"
-          />
-        </div>
-        <div class="formGroup">
-          <span class="or"><span class="orInner">Or</span></span>
-        </div>
-        <!-- Continue with Google -->
-        <div class="formGroup">
-          <button
-            type="button"
-            class="btn googleBtn"(click)="authService.GoogleAuth()">
-            <i class="fab fa-google-plus-g"></i>
-            Continue with Google
-          </button>
-        </div>
-      </div>
-      <div class="redirectToLogin">
-        <span>
-          Already have an account?
-          <span class="redirect" [routerLink]="['/login']">Log In</span></span>
-      </div>
+<div class="main-div">
+  <mat-card>
+    <mat-card-content>
+      <a [routerLink]="['/']"><img src="/assets/images/logomini.png" alt="Logo"
+          style="height: 3.5rem; margin-bottom: 1.5rem;"></a>
+      <h2>Sign Up to NetCap</h2>
+      <mat-form-field>
+        <mat-label>E-mail</mat-label>
+        <input matInput type="email" #userEmail required>
+        <mat-error>
+          Please provide a valid email address
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" #userPwd required>
+        <mat-error>
+          Please provide a valid password
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+        Sign Up
+      </button>
+      <button mat-raised-button (click)="authService.GoogleAuth()">
+        <i class="fab fa-google-plus-g"></i>
+        Continue with Google
+      </button>
+    </mat-card-content>
+    <div class="redirectToLogin">
+      <span>Already have an account?<span class="redirect" [routerLink]="['/login']"><strong> Log in
+          </strong></span></span>
     </div>
-  </div>
+  </mat-card>
+</div>

@@ -1,0 +1,29 @@
+mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+}
+  
+mat-form-field {
+    display: block;
+}
+
+button {
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.redirectToLogin {
+    margin: 1em 0;
+}
+
+.main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+strong {
+    cursor: pointer;
+}

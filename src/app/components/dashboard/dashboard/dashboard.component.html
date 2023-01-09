@@ -1,14 +1,20 @@
 <!-- Toolbar -->
 <mat-toolbar color="primary" class="header">
-  <div>NetCap</div>
+  <span>
+    <a [routerLink]="['/home']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
+  </span>
+  <div style="flex: 1 0 auto;"></div>
+  <mat-icon>brightness_5</mat-icon>
+  <mat-slide-toggle [formControl]="toggleControl" class="mr-8 nav-tool-items">
+  </mat-slide-toggle>
+  <mat-icon>bedtime</mat-icon>
   <span class="nav-tool-items">
     <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
   </span>
 </mat-toolbar>
-<mat-sidenav-container>
+<mat-sidenav-container style="min-height: calc(100% - 64px);">
   <!-- Sidenav -->
-  <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
-    [fixedTopGap]>
+  <mat-sidenav #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true">
     <mat-nav-list>
       <a mat-list-item [routerLink]="['/dashboard']">
         <mat-icon>dashboard</mat-icon> Dashboard
@@ -26,14 +32,8 @@
   </mat-sidenav>
   <!-- Main content -->
   <mat-sidenav-content>
-    <!-- Applying the mat-tyography class adds styles for native elements. -->
-    <section class="mat-typography title-group">
-      <h1>Welcome in our shop!</h1>
-      <mat-divider></mat-divider>
-    </section>
-    <!-- Angular material cards -->
-    <div class="productCards">
-      <router-outlet></router-outlet>
-    </div>
+    <h1>Welcome in our shop!</h1>
+    <mat-divider style="margin-bottom: 10px;"></mat-divider>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

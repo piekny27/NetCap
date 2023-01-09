@@ -1,3 +1,37 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin color($theme) {
+  // Get the color config from the theme.
+  $color-config: mat.get-color-config($theme);
+
+  // Get the primary color palette from the color-config.
+  $primary-palette: map.get($color-config, 'primary');
+
+  mat-sidenav-content::-webkit-scrollbar-thumb {
+    background-color: mat.get-color-from-palette($primary-palette, 500);
+    border-radius: 10px;
+  }
+}
+
+@mixin typography($theme) {
+  // Get the typography config from the theme.
+  $typography-config: mat.get-typography-config($theme);
+
+}
+
+@mixin theme($theme) {
+  $color-config: mat.get-color-config($theme);
+  @if $color-config != null {
+    @include color($theme);
+  }
+
+  $typography-config: mat.get-typography-config($theme);
+  @if $typography-config != null {
+    @include typography($theme);
+  }
+}
+
 mat-sidenav-content mat-card {
   margin: 0px;
 }
@@ -5,12 +39,9 @@ mat-sidenav-content mat-card {
 mat-sidenav-content::-webkit-scrollbar {
   width: 10px;
 }
-mat-sidenav-content::-webkit-scrollbar-thumb {
-  background-color: #2974d6;
-  border-radius: 10px;
-}
+
 mat-sidenav-content::-webkit-scrollbar-track {
-  background-color: #F5F5F5;
+  background-color: transparent;
 }
 mat-sidenav-content p.center {
   text-align: center;

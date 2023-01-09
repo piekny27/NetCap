@@ -21,7 +21,7 @@ import { DashboardComponent } from '././components/dashboard/dashboard/dashboard
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { LaptopDetailsComponent } from './components/dashboard/products/laptop-details/laptop-details.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
@@ -52,6 +52,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
     NgbModule,

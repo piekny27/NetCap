@@ -1,6 +1,8 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, HostBinding } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { AuthService } from "../../../services/auth-service/auth.service";
+import { FormControl } from '@angular/forms';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,11 +10,24 @@ import { AuthService } from "../../../services/auth-service/auth.service";
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  constructor(public authService: AuthService) {}
+  constructor(public authService: AuthService, private overlay: OverlayContainer) {}
+  @HostBinding('class') className = '';
+
+  toggleControl = new FormControl(false);
+
   opened = true;
   @ViewChild('sidenav', { static: true })
   sidenav!: MatSidenav;
   ngOnInit() {
+    this.toggleControl.valueChanges.subscribe((darkMode) => {
+      const darkClassName = 'darkMode';
+      this.className = darkMode ? darkClassName : '';
+      if (darkMode) {
+        this.overlay.getContainerElement().classList.add(darkClassName);
+      } else {
+        this.overlay.getContainerElement().classList.remove(darkClassName);
+      }
+    });
     console.log(window.innerWidth)
     if (window.innerWidth < 768) {
       this.sidenav.fixedTopGap = 55;
