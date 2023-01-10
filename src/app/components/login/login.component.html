@@ -1,7 +1,7 @@
 <div class="main-div">
   <mat-card>
     <mat-card-content>
-      <a [routerLink]="['/']"><img src="/assets/images/logomini.png" alt="Logo"
+      <a [routerLink]="['/home']"><img src="/assets/images/logomini.png" alt="Logo"
           style="height: 3.5rem; margin-bottom: 1.5rem;"></a>
       <h2>Login to NetCap</h2>
       <mat-form-field>
@@ -13,7 +13,7 @@
       </mat-form-field>
       <mat-form-field>
         <mat-label>Password</mat-label>
-        <input matInput type="password" #userPassword required>
+        <input matInput type="password" (keydown.enter)="authService.SignIn(userName.value, userPassword.value)" #userPassword required>
         <mat-error>
           Please provide a valid password
         </mat-error>

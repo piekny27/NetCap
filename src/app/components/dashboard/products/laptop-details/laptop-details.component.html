@@ -1,26 +1,29 @@
 <form>
   <mat-card-content>
+    <mat-divider style="margin-bottom: 1rem;"></mat-divider>
+      <button mat-stroked-button id="statusbtn" color="primary" type="submit"><mat-icon>add_box</mat-icon>Add new product</button> 
+    <mat-divider style="margin: 1rem 0;"></mat-divider>
     <div class="form-group">
       <label><strong>Status:</strong> {{ currentLaptop.published ? "Published" : "Pending" }}</label>
     </div>
-    <mat-divider style="margin-bottom: 15px;"></mat-divider>
-    <button mat-stroked-button color="primary" *ngIf="currentLaptop.published" (click)="updatePublished(false)">UnPublish</button>
-    <button mat-stroked-button color="primary" *ngIf="!currentLaptop.published" (click)="updatePublished(true)">Publish</button>
-    <button mat-stroked-button color="primary" type="submit" (click)="updateLaptop()">Update</button>
-    <button mat-stroked-button color="warn" (click)="deleteLaptop()">Delete</button>
-    <mat-divider style="margin: 15px 0;"></mat-divider>
+    <mat-divider style="margin-bottom: 1rem;"></mat-divider>
+    <button mat-stroked-button id="statusbtn" color="primary" *ngIf="currentLaptop.published" (click)="updatePublished(false)">UnPublish</button>
+    <button mat-stroked-button id="statusbtn" color="primary" *ngIf="!currentLaptop.published" (click)="updatePublished(true)">Publish</button>
+    <button mat-stroked-button id="statusbtn" color="primary" type="submit" (click)="updateLaptop()">Update</button>
+    <button mat-stroked-button id="statusbtn" color="warn" (click)="deleteLaptop()">Delete</button>
+    <mat-divider style="margin: 1rem 0;"></mat-divider>
     <mat-accordion>
       <mat-expansion-panel [expanded]="true">
         <mat-expansion-panel-header>
-          <mat-panel-title>
+          <mat-panel-title><mat-icon>camera_alt</mat-icon> &nbsp; 
             Photo
           </mat-panel-title>
           <mat-panel-description>
-            Image with laptop
+            Laptop image
           </mat-panel-description>
         </mat-expansion-panel-header>
         <mat-divider style="margin-bottom: 15px;"></mat-divider>
-        <img *ngIf="currentLaptop.image" style="height: auto;max-width:100%;max-height:100%; margin-bottom:10px" src="{{currentLaptop.image}}" onerror="" alt="">
+        <img *ngIf="currentLaptop.image" style="height: auto;max-width:100%;max-height:100%; margin-bottom:10px" src="{{currentLaptop.image}}">
         <mat-form-field *ngIf="currentLaptop.image" appearance="outline" style="width: 100%">
           <mat-label>Image</mat-label>
           <input matInput type="text" placeholder="https://laptop-photo.com/example-laptop.jpg" id="image" [(ngModel)]="currentLaptop.image" name="image" />
@@ -31,7 +34,7 @@
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title>
+          <mat-panel-title><mat-icon>arrow_forward_ios</mat-icon> &nbsp;
             Price
           </mat-panel-title>
           <mat-panel-description>
@@ -54,7 +57,7 @@
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title>
+          <mat-panel-title><mat-icon>layers</mat-icon> &nbsp;
             Main
           </mat-panel-title>
           <mat-panel-description>
@@ -77,7 +80,7 @@
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title>
+          <mat-panel-title><mat-icon>tune</mat-icon> &nbsp;
             Advanced
           </mat-panel-title>
           <mat-panel-description>

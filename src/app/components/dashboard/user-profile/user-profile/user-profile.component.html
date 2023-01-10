@@ -5,8 +5,8 @@
           alt="{{user.displayName}}"> -->
             <div class="media-body">
                 <p><strong>User: </strong>{{(user.displayName) ? user.displayName : 'unknown'}}</p>
+                <p><strong>User role: </strong>{{(user.roles) ? user.roles: 'unknown'}}</p>
                 <p><strong>User ID: </strong>{{user.uid}}</p>
-                <p><strong>User roles: </strong>{{(user.roles) ? user.roles: 'aaa'}}</p>
                 <p><strong>Email: </strong>{{user.email}}</p>
                 <p><strong>Email Verified: </strong>{{user.emailVerified}}</p>
                 <div *ngFor="let item of authService.userData.roles | keyvalue">

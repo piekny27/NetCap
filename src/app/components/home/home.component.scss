@@ -113,11 +113,22 @@ body {
 }
 
 .footer {
+  position: relative;
+  margin-top: -6rem;
+  height: 6rem;
   color: white;
   bottom: 0;
-  width: 100%;
-  height: 6rem;   
+  width: 100%;   
   background:rgb(39, 76, 156);
   padding: 1rem 6rem 1rem 6rem;
+  clear: both;
 }
 
+.wrapper {
+  min-height: 93.4%;
+}
+
+.main {
+  overflow: auto;
+  padding-bottom: 6rem;
+}
