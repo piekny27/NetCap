@@ -28,6 +28,7 @@ import { AngularMaterialModule } from './angular-material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
     BrowserAnimationsModule,
     AngularMaterialModule,
     NgbModule,
+    HttpClientModule,
   ],
   providers: [
     AuthService

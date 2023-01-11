@@ -25,6 +25,9 @@
       <a mat-list-item [routerLink]="['/dashboard/products']">
         <mat-icon>inventory_2</mat-icon> Products
       </a>
+      <a mat-list-item [routerLink]="['/dashboard/api']">
+        <mat-icon>api</mat-icon> REST API
+      </a>
       <a mat-list-item (click)="authService.SignOut()">
         <mat-icon>logout</mat-icon> Log out
       </a>
