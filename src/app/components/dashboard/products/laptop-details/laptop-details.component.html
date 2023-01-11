@@ -23,7 +23,9 @@
           </mat-panel-description>
         </mat-expansion-panel-header>
         <mat-divider style="margin-bottom: 15px;"></mat-divider>
-        <img *ngIf="currentLaptop.image" style="height: auto;max-width:100%;max-height:100%; margin-bottom:10px" src="{{currentLaptop.image}}">
+        <div class="centerimage">
+          <img class="laptopimage" *ngIf="currentLaptop.image" src="{{currentLaptop.image}}">
+        </div>
         <mat-form-field *ngIf="currentLaptop.image" appearance="outline" style="width: 100%">
           <mat-label>Image</mat-label>
           <input matInput type="text" placeholder="https://laptop-photo.com/example-laptop.jpg" id="image" [(ngModel)]="currentLaptop.image" name="image" />
