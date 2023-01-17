@@ -8,17 +8,26 @@ import {
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { Roles } from '../../models/roles/roles';
+import { MatSnackBar, 
+  MatSnackBarHorizontalPosition, 
+  MatSnackBarVerticalPosition, 
+} from '@angular/material/snack-bar';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+  horizontalPosition: MatSnackBarHorizontalPosition = 'center';
+  verticalPosition: MatSnackBarVerticalPosition = 'top';
+  durationInSeconds = 2.5;
   userData: any;
   constructor(
     public afs: AngularFirestore,
     public afAuth: AngularFireAuth,
     public router: Router,
-    public ngZone: NgZone) {
+    public ngZone: NgZone,
+    private _snackBar: MatSnackBar) {
     this.afAuth.authState.subscribe((user) => {
       if (user) {
         this.userData = user;
@@ -39,11 +48,20 @@ export class AuthService {
         this.afAuth.authState.subscribe((user) => {
           if (user) {
             this.router.navigate(['dashboard']);
+            this._snackBar.open("You ale logged in ✔️", "", {
+              duration: this.durationInSeconds * 1000,
+              horizontalPosition: this.horizontalPosition,
+              verticalPosition: this.verticalPosition,
+            });
           }
         });
       })
       .catch((error) => {
-        window.alert(error.message);
+        this._snackBar.open("Email or password was wrong", "", {
+          duration: this.durationInSeconds * 1000,
+          horizontalPosition: this.horizontalPosition,
+          verticalPosition: this.verticalPosition,
+        });
       });
   }
   // Sign up with email/password
@@ -125,9 +143,16 @@ export class AuthService {
   }
   // Sign out
   SignOut() {
+
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
-      this.router.navigate(['home']);
+      this.router.navigate(['login']);
+      this._snackBar.open("You ale logged out ⚪", "", {
+        duration: this.durationInSeconds * 1000,
+        horizontalPosition: this.horizontalPosition,
+        verticalPosition: this.verticalPosition,
+      });
+
     });
   }
 

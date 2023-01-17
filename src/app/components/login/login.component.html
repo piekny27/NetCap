@@ -4,7 +4,7 @@
       <a [routerLink]="['/home']"><img src="/assets/images/logomini.png" alt="Logo"
           style="height: 3.5rem; margin-bottom: 1.5rem;"></a>
       <h2>Login to NetCap</h2>
-      <mat-form-field>
+      <mat-form-field >
         <mat-label>E-mail</mat-label>
         <input matInput type="email" #userName required>
         <mat-error>
@@ -27,8 +27,8 @@
       </button>
     </mat-card-content>
     <div class="redirectToLogin">
-      <span>Don't have an account?<span class="redirect" [routerLink]="['/register']"><strong> Sign Up
-          </strong></span></span>
+      <span>Don't have an account?<span class="redirect" [routerLink]="['/register']"><strong> Sign Up </strong></span>
+    </span>
     </div>
   </mat-card>
 </div>
