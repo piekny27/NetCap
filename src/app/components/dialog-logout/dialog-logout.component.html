@@ -2,7 +2,7 @@
     <h3 mat-dialog-title>Confirm Logout</h3>
     <mat-dialog-content>Do you want to logout?</mat-dialog-content>
     <mat-dialog-actions class="dialog-buttons">
-        <button mat-flat-button color="warn" class="confirm-btn" >Log Out</button>
+        <button mat-flat-button color="warn" class="confirm-btn" (click)="authService.SignOut()" mat-dialog-close>Log Out</button>
         <button mat-flat-button color="link" mat-dialog-close>Cancel</button>
     </mat-dialog-actions>
 </div>

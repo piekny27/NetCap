@@ -3,6 +3,8 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { AuthService } from "../../../services/auth-service/auth.service";
 import { FormControl } from '@angular/forms';
 import { OverlayContainer } from '@angular/cdk/overlay';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogLogoutComponent } from '../../dialog-logout/dialog-logout.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -10,7 +12,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  constructor(public authService: AuthService, private overlay: OverlayContainer) {}
+  constructor(public authService: AuthService, private overlay: OverlayContainer, private dialog: MatDialog) {}
   @HostBinding('class') className = '';
 
   toggleControl = new FormControl(false);
@@ -54,5 +56,8 @@ export class DashboardComponent implements OnInit {
     } else {
       return false;
     }
+  }
+  ShowDialog(){
+    this.dialog.open(DialogLogoutComponent);
   }
 }

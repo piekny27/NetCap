@@ -1,15 +1,13 @@
 <form>
   <mat-card-content>
-    <mat-divider style="margin-bottom: 1rem;"></mat-divider>
-      <button mat-stroked-button id="statusbtn" color="primary" type="submit"><mat-icon>add_box</mat-icon>Add new product</button> 
-    <mat-divider style="margin: 1rem 0;"></mat-divider>
     <div class="form-group">
       <label><strong>Status:</strong> {{ currentLaptop.published ? "Published" : "Pending" }}</label>
     </div>
     <mat-divider style="margin-bottom: 1rem;"></mat-divider>
     <button mat-stroked-button id="statusbtn" color="primary" *ngIf="currentLaptop.published" (click)="updatePublished(false)">UnPublish</button>
     <button mat-stroked-button id="statusbtn" color="primary" *ngIf="!currentLaptop.published" (click)="updatePublished(true)">Publish</button>
-    <button mat-stroked-button id="statusbtn" color="primary" type="submit" (click)="updateLaptop()">Update</button>
+    <button mat-stroked-button id="statusbtn" color="success" (click)="addLaptop()"><mat-icon>add_box</mat-icon>New</button> 
+    <button mat-stroked-button id="statusbtn" color="primary" (click)="updateLaptop()">Update</button>
     <button mat-stroked-button id="statusbtn" color="warn" (click)="deleteLaptop()">Delete</button>
     <mat-divider style="margin: 1rem 0;"></mat-divider>
     <mat-accordion>

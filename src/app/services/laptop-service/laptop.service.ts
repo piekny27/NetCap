@@ -22,12 +22,12 @@ export class LaptopService {
     return this.laptopsRef.push(laptop);
   }
 
-  update(key: string, value: any): Promise<void> {
-    return this.laptopsRef.update(key, value);
+  update(id: string, value: any): Promise<void> {
+    return this.laptopsRef.update(id, value);
   }
 
-  delete(key: string): Promise<void> {
-    return this.laptopsRef.remove(key);
+  delete(id: string): Promise<void> {
+    return this.laptopsRef.remove(id);
   }
 
   deleteAll(): Promise<void> {

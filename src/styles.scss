@@ -14,12 +14,14 @@ $mat-primary: (
 );
 $app-primary: mat-palette(mat.$indigo-palette, 500);
 $app-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
+$app-green: mat-palette(mat.$teal-palette, 700);
 $app-primary-dark: mat-palette(mat.$indigo-palette, 300);
 
 $app-light-theme: mat.define-light-theme((
  color: (
    primary: $app-primary,
    accent: $app-accent,
+   success: $app-green,
  ),
  typography: mat.define-typography-config(),
  density: 0,
@@ -29,6 +31,7 @@ $app-dark-theme: mat.define-dark-theme((
  color: (
    primary: $app-primary-dark,
    accent: $app-accent,
+   success: $app-green,
  ),
  typography: mat.define-typography-config(),
  density: 0,

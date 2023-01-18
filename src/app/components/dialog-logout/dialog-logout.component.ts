@@ -9,8 +9,4 @@ import { AuthService } from 'src/app/services/auth-service/auth.service';
 })
 export class DialogLogoutComponent {
   constructor(public authService: AuthService) {}
-
-  ConfirmDialog (){
-    this.authService.SignOut();
-  }
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, OnChanges, Output, EventEmitter } from '@angular/core';
+import { LaptopDetails } from 'src/app/models/laptop-details/laptop-details';
 import { Laptop } from 'src/app/models/laptop/laptop.model';
+import { Price } from 'src/app/models/price/price';
 import { LaptopService } from 'src/app/services/laptop-service/laptop.service';
 
 @Component({
@@ -14,6 +16,30 @@ export class LaptopDetailsComponent implements OnInit {
     published: false
   };
   message = '';
+  newPrice: Price = {
+    currency: 'USD',
+    old_price: 0
+  }
+  newDetails: LaptopDetails = {
+    cpu_implementation: '',
+    cpu_number_of_cores: 0,
+    cpu_type: '',
+    design_color_name: '',
+    display_size__inch: 0,
+    memory_ram__gb: 0,
+    storage_capacity__gb: 0,
+    storage_type: ''
+  }
+  newLaptop: Laptop = {
+    key: Math.floor(Math.random() * (999999 - 100000) + 100000).toString(),
+    image: '',
+    info: '',
+    main: this.newDetails,
+    mpn: '',
+    name: 'New Laptop',
+    price: this.newPrice,
+    published: false
+  }
 
   constructor(private laptopService: LaptopService) { }
 
@@ -64,5 +90,13 @@ export class LaptopDetailsComponent implements OnInit {
         })
         .catch(err => console.log(err));
     }
+  }
+
+  addLaptop(): void {
+    this.laptopService.create(this.newLaptop)
+    .then(()=>{
+      this.refreshList.emit();
+      this.message = 'The laptop was added successfully!';
+    });
   }
 }
