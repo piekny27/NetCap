@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
 import { AuthService } from "../../services/auth-service/auth.service";
 import { Router } from '@angular/router';
+import {MatDialog } from '@angular/material/dialog';
+import { DialogLogoutComponent } from '../dialog-logout/dialog-logout.component';
 
 @Component({
   selector: 'app-home',
@@ -9,11 +10,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor(public authService: AuthService) { }
+  constructor(
+    public authService: AuthService,
+    public dialog: MatDialog
+    ) { }
   ngOnInit(): void { }
   
-  isLogged() {
-  
+  ShowDialog(){
+    this.dialog.open(DialogLogoutComponent);
   }
 
   gotoTop() {

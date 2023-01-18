@@ -8,6 +8,7 @@
     <a mat-button [routerLink]="['/login']">Log In</a>
     <a mat-button [routerLink]="['/register']">Sign Up</a>
     <a mat-button (click)="authService.SignOut()">Log Out</a>
+    <a mat-button (click)="ShowDialog()">Log Out<mat-icon>exit_to_app</mat-icon></a>
   </mat-toolbar>
   <div class="wrapper">
     <div class="main">
