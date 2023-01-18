@@ -12,7 +12,7 @@ import { MatSnackBar,
   MatSnackBarHorizontalPosition, 
   MatSnackBarVerticalPosition, 
 } from '@angular/material/snack-bar';
-import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+
 
 @Injectable({
   providedIn: 'root'
@@ -143,7 +143,6 @@ export class AuthService {
   }
   // Sign out
   SignOut() {
-
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
       this.router.navigate(['login']);
@@ -152,10 +151,8 @@ export class AuthService {
         horizontalPosition: this.horizontalPosition,
         verticalPosition: this.verticalPosition,
       });
-
     });
   }
-
   // Role-based authorization
 
   canRead(user: User): boolean {

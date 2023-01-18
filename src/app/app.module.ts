@@ -29,6 +29,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DialogLogoutComponent } from './components/dialog-logout/dialog-logout.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,11 @@ import { HttpClientModule } from '@angular/common/http';
     NotFoundComponent,
     LaptopDetailsComponent,
     UserProfileComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    DialogLogoutComponent
+  ],
+  entryComponents: [
+    DialogLogoutComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +64,7 @@ import { HttpClientModule } from '@angular/common/http';
     AngularMaterialModule,
     NgbModule,
     HttpClientModule,
+    MatDialogModule
   ],
   providers: [
     AuthService
