@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
+      - run: npm install -g @angular/cli@latest
       - run: ng build --configuration=production
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
