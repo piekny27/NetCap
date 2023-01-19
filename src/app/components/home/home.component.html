@@ -10,7 +10,13 @@
     <a *ngIf="authService.isLoggedIn" mat-button (click)="ShowDialog()"><mat-icon>exit_to_app</mat-icon>Log Out</a>
   </mat-toolbar>
   <div class="wrapper">
-    <app-products-card></app-products-card>
+    <div class="main">
+      <div class="laptopList">
+          <div class="containerlap">
+            <app-products-card *ngFor="let laptop of laptops; let i = index" [laptop]="laptop"></app-products-card>
+          </div>
+      </div>
+    </div>
   </div>
   <div class="footer">
     <div class="footerText">

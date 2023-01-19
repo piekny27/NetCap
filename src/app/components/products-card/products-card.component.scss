@@ -1,22 +1,3 @@
-.main {
-    overflow: auto;
-    padding-bottom: 6rem;
-  }
-  
-.laptopList {
-  padding: 2rem 0 2rem 0;
-}
-
-.containerlap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-.containerlap > * {
-    flex: 1 1 20rem;
-  }
-
 .laptop-card {
     max-width: 20rem;
     margin: 0.6rem;

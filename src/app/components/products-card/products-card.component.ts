@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Laptop } from 'src/app/models/laptop/laptop.model';
 
 @Component({
   selector: 'app-products-card',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./products-card.component.scss']
 })
 export class ProductsCardComponent {
-
+  @Input() laptop?: Laptop;
 }

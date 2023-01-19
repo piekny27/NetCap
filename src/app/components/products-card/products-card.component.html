@@ -1,29 +1,23 @@
-<div class="main">
-    <div class="laptopList">
-        <div class="containerlap">
-            <mat-card class="laptop-card" *ngFor="let num of [1,2,3,4,5]">
-                <mat-card-header>
-                    <mat-card-title>
-                        <div class="titlebox">title</div>
-                    </mat-card-title>
-                </mat-card-header>
-                <div class="ripple-container" matRipple>
-                    <img mat-card-image
-                        src="https://devices-api-prd.s3.eu-west-3.amazonaws.com/52a82d5610a9293c3efbb7668f256503.jpg"
-                        alt="Laptop" style="padding: 1rem; width: 19rem;">
-                </div>
-                <mat-card-content>
-                    <div class="price">
-                        <p>Price: </p>
-                    </div>
-                    <div class="basic-spec">
-                        <p>Info 16GB RAM / 512GB Disk ...  </p>
-                    </div>
-                </mat-card-content>
-                <mat-card-actions>
-                    <button mat-button><mat-icon>credit_card</mat-icon>BUY NOW</button>
-                </mat-card-actions>
-            </mat-card>
-        </div>
+<mat-card class="laptop-card">
+    <mat-card-header>
+        <mat-card-title>
+            <div class="titlebox">{{laptop!.name}}</div>
+        </mat-card-title>
+    </mat-card-header>
+    <div class="ripple-container" matRipple>
+        <img mat-card-image
+            src="{{ laptop!.image }}"
+            alt="Laptop" style="padding: 1rem; width: 19rem;">
     </div>
-</div>
+    <mat-card-content>
+        <div class="price">
+            <p>Price: {{ laptop!.price!.old_price }} {{ laptop!.price!.currency }}</p>
+        </div>
+        <div class="basic-spec">
+            <p>{{laptop!.info}}</p>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button><mat-icon>credit_card</mat-icon>BUY NOW</button>
+    </mat-card-actions>
+</mat-card>
