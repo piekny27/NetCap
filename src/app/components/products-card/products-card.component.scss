@@ -1,0 +1,50 @@
+.main {
+    overflow: auto;
+    padding-bottom: 6rem;
+  }
+  
+.laptopList {
+  padding: 2rem 0 2rem 0;
+}
+
+.containerlap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.containerlap > * {
+    flex: 1 1 20rem;
+  }
+
+.laptop-card {
+    max-width: 20rem;
+    margin: 0.6rem;
+  }
+
+.titlebox {
+  font-size: 1rem;
+  }
+
+.ripple-container {
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    width: 20rem;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+.price {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  }
+
+.card-text {
+    color: #000;
+  }

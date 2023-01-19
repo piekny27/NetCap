@@ -3,46 +3,20 @@
       <a [routerLink]="['/home']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
     </span>
       <div class="spacer"></div>
-    <a mat-button [routerLink]="['/home']">Shop</a>
-    <a *ngIf="authService.isLoggedIn" mat-button [routerLink]="['/dashboard']">Dashboard</a>
+    <a mat-button [routerLink]="['/home']"><mat-icon>shop</mat-icon>Shop</a>
+    <a *ngIf="authService.isLoggedIn" mat-button [routerLink]="['/dashboard']"><mat-icon>dashboard</mat-icon>Dashboard</a>
     <a *ngIf="!authService.isLoggedIn" mat-button [routerLink]="['/login']">Log In</a>
     <a *ngIf="!authService.isLoggedIn" mat-button [routerLink]="['/register']">Sign Up</a>
-    <a *ngIf="authService.isLoggedIn" mat-button (click)="ShowDialog()">Log Out<mat-icon>exit_to_app</mat-icon></a>
+    <a *ngIf="authService.isLoggedIn" mat-button (click)="ShowDialog()"><mat-icon>exit_to_app</mat-icon>Log Out</a>
   </mat-toolbar>
   <div class="wrapper">
-    <div class="main">
-      <div class="laptopList">
-        <div class="containerlap">
-          <mat-card class="laptop-card" *ngFor="let num of [1,2,3]">
-            <mat-card-header>
-              <mat-card-title>
-                <div class="titlebox">title</div>
-              </mat-card-title>
-            </mat-card-header>
-            <img mat-card-image
-              src="https://devices-api-prd.s3.eu-west-3.amazonaws.com/52a82d5610a9293c3efbb7668f256503.jpg" alt="Laptop"
-              style="padding: 1rem;">
-            <mat-card-content style="padding-bottom: 1rem;">
-              <div class="price">
-                <p>Price: </p>
-              </div>
-            </mat-card-content>
-            <mat-card-actions>
-              <button mat-button>BUY NOW</button>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </div>
-    </div>
-    
+    <app-products-card></app-products-card>
   </div>
-    <div class="footer">
-      <div class="footerText">
-        For more information, please visit our newsletter.
+  <div class="footer">
+    <div class="footerText">
+      For more information, please visit our newsletter.
     </div>
-      <div class="buttonUp">
-        <button (click)="gotoTop()" id="myBtn"><mat-icon>keyboard_arrow_up</mat-icon></button>
-      </div>
+    <div class="buttonUp">
+      <button (click)="gotoTop()" id="myBtn"><mat-icon>keyboard_arrow_up</mat-icon></button>
     </div>
-
-  
+  </div>

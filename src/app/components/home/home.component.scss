@@ -77,58 +77,22 @@ body {
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
   }
 
-.card-text {
-    color: #000;
-  }
-
 .spacer {
     flex: 1 1 auto;
   }
 
-.laptop-card {
-    max-width: 20rem;
-    margin: 0.8rem;
-  }
-
-.containerlap{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-.containerlap >*{
-    flex: 1 1 20rem;
-  }
-
-.price {
-  font-size: 1.2rem;
-}
-
-.titlebox {
-  font-size: 1rem;
-}
-
-.laptopList {
-  padding: 3rem 0 3rem 0;
-}
-
 .footer {
-  position: relative;
-  margin-top: -6rem;
-  height: 6rem;
-  color: white;
-  bottom: 0;
-  width: 100%;   
-  background:rgb(39, 76, 156);
-  padding: 1rem 6rem 1rem 6rem;
-  clear: both;
-}
+    position: relative;
+    margin-top: -6rem;
+    height: 6rem;
+    color: white;
+    bottom: 0;
+    width: 100%;   
+    background:rgb(39, 76, 156);
+    padding: 1rem 6rem 1rem 6rem;
+    clear: both;
+  }
 
 .wrapper {
-  min-height: 93.4%;
-}
-
-.main {
-  overflow: auto;
-  padding-bottom: 6rem;
-}
+    min-height: 93.4%;
+  }

@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { AuthService } from "../../services/auth-service/auth.service";
-import {MatDialog } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { DialogLogoutComponent } from '../dialog-logout/dialog-logout.component';
 
 @Component({
