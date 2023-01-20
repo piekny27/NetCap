@@ -1,0 +1,15 @@
+.div-row button,
+.div-row a {
+  margin-right: 8px;
+}
+mat-form-field {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.div-row mat-form-field{
+    width: calc(100% - 120px);
+}
+#area{
+  width: calc(100% - 120px);
+  min-height: fit-content;
+}

@@ -30,6 +30,7 @@ import { LaptopDetailsComponent } from './components/dashboard/products/laptop-d
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { DialogLogoutComponent } from './components/dialog-logout/dialog-logout.component';
 import { ProductsCardComponent } from './components/products-card/products-card.component';
+import { RestApiComponent } from './components/dashboard/rest-api/rest-api/rest-api.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { ProductsCardComponent } from './components/products-card/products-card.
     VerifyEmailComponent,
     DialogLogoutComponent,
     ProductsCardComponent,
+    RestApiComponent
   ],
   entryComponents: [
     DialogLogoutComponent

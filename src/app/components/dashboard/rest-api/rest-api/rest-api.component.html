@@ -1,0 +1,33 @@
+<h3>Sample REST API requests:</h3>
+<div class="div-row">
+    <mat-form-field appearance="fill">
+        <mat-label>Choose REST API command</mat-label>
+        <mat-select #selectRequests (selectionChange)="gf.value = $event.value; currentItem = $event.value">
+          <mat-option *ngFor="let req of requests;" [value]="req.url">
+            {{req.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<div class="div-row">
+    <mat-form-field appearance="outline">
+        <mat-label>url</mat-label>
+        <input matInput #gf type="text">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="makeRequest()">Submit</button>
+</div>
+<div class="div-row">
+    <mat-form-field #area appearance="fill">
+        <textarea 
+            matInput 
+            #textArea
+            disabled="true"
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="1"
+            cdkAutosizeMaxRows="16"
+            [textContent]="textField">
+        </textarea>
+    </mat-form-field>
+    <button *ngIf="textArea.value !== ''" mat-raised-button color="primary" (click)="downloadCurrent()">Download</button>
+</div>

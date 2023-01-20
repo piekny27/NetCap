@@ -9,6 +9,7 @@ import { ProductsComponent } from './components/dashboard/products/products/prod
 import { RegisterComponent } from './components/register/register.component';
 import { AuthGuard } from './services/auth-guard/auth.guard';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { RestApiComponent } from './components/dashboard/rest-api/rest-api/rest-api.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,6 +22,7 @@ const routes: Routes = [
     path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard],
     children: [
       { path: 'user-profile', component: UserProfileComponent, canActivate: [AuthGuard] },
+      { path: 'rest-api', component: RestApiComponent, canActivate: [AuthGuard] },
       { path: 'products', component: ProductsComponent},
     ]
   },
