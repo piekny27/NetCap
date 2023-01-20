@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: 18
       - run: npm install
+      - name: Repair firebase
+        run: ./.github/scripts/firebase_broken.sh
       - run: npm run build:prod
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
