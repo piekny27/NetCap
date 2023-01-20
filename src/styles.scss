@@ -1,7 +1,6 @@
 @use '@angular/material' as mat;
 @use './app/components/dashboard/products/products/products.component.scss' as productsTheme;
 @import "@angular/material/theming";
-@import "node_modules/bootstrap/scss/bootstrap";
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
 @include mat.core();

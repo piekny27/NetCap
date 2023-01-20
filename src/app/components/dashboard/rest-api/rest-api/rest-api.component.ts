@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { catchError, Observable, throwError } from 'rxjs';
-import { saveAs } from 'file-saver';
+import { catchError, Observable} from 'rxjs';
 
 interface Requests {
   id: number;
@@ -40,7 +39,7 @@ export class RestApiComponent {
   }
 
   downloadCurrent(){
-    saveAs(this.currentItem!, "restapi.json")
+    window.open(this.currentItem!, '_blank');
   }
 
   public getLaptops(url: string): Observable<any> {
