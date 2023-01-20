@@ -1,17 +1,29 @@
 .laptop-card {
+    grid-area: a;
+    justify-self: center;
     max-width: 20rem;
     margin: 0.6rem;
   }
 
 .titlebox {
   font-size: 1rem;
+  height: 4rem;
   }
 
+.titlebox > a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-height: 100%;
+
+}
 .ripple-container {
     cursor: pointer;
     justify-content: center;
     text-align: center;
-    width: 20rem;
+    height: 10rem;
   
     user-select: none;
     -webkit-user-select: none;
@@ -28,7 +40,11 @@
 
 .basic-spec {
   font-size: 0.75rem;
+  
   }
+.basic-spec > p {
+  height: 4rem;
+}
 
 .card-text {
     color: #000;

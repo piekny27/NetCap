@@ -95,9 +95,16 @@ body {
 
 .wrapper {
     min-height: 93.4%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      ". a a a a ."
+      ". a a a a .";
   }
 
 .main {
+  grid-area: a;
+  justify-self: center;
   overflow: auto;
   padding-bottom: 6rem;
 }
@@ -109,9 +116,10 @@ body {
 .containerlap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+
 }
 
-.containerlap > * {
-  flex: 1 1 20rem;
-}
+// .containerlap > * {
+//   flex: 1 1 20rem;
+// }
