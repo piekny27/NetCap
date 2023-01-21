@@ -1,14 +1,12 @@
 .laptop-card {
-    grid-area: a;
-    justify-self: center;
-    max-width: 20rem;
-    margin: 0.6rem;
-  }
+  max-width: 20rem;
+  margin: 0.6rem;
+}
 
 .titlebox {
   font-size: 1rem;
   height: 4rem;
-  }
+}
 
 .titlebox > a {
   text-decoration: none;
@@ -17,36 +15,36 @@
 
 img {
   max-height: 100%;
-
+  padding: 0.5rem;
 }
 .ripple-container {
-    cursor: pointer;
-    justify-content: center;
-    text-align: center;
-    height: 10rem;
-  
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-  
-    -webkit-user-drag: none;
-    -webkit-tap-highlight-color: transparent;
-  }
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  height: 10rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
 
 .price {
+  cursor: default !important;
   margin-top: 1rem;
   font-size: 1.2rem;
-  }
+}
 
 .basic-spec {
+  cursor: default !important;
+  text-decoration: none;
   font-size: 0.75rem;
-  
-  }
+}
+
 .basic-spec > p {
   height: 4rem;
 }
 
 .card-text {
-    color: #000;
-  }
-
+  color: #000;
+}
