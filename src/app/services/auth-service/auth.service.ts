@@ -48,7 +48,7 @@ export class AuthService {
         this.afAuth.authState.subscribe((user) => {
           if (user) {
             this.router.navigate(['dashboard']);
-            this._snackBar.open("You ale logged in ✔️", "", {
+            this._snackBar.open("You are logged in 🟢", "", {
               duration: this.durationInSeconds * 1000,
               horizontalPosition: this.horizontalPosition,
               verticalPosition: this.verticalPosition,
@@ -57,7 +57,7 @@ export class AuthService {
         });
       })
       .catch((error) => {
-        this._snackBar.open("Email or password was wrong", "", {
+        this._snackBar.open("Email or password was wrong 🔴", "", {
           duration: this.durationInSeconds * 1000,
           horizontalPosition: this.horizontalPosition,
           verticalPosition: this.verticalPosition,
@@ -146,7 +146,7 @@ export class AuthService {
     return this.afAuth.signOut().then(() => {
       localStorage.removeItem('user');
       this.router.navigate(['login']);
-      this._snackBar.open("You ale logged out ⚪", "", {
+      this._snackBar.open("You are logged out 🟠", "", {
         duration: this.durationInSeconds * 1000,
         horizontalPosition: this.horizontalPosition,
         verticalPosition: this.verticalPosition,
