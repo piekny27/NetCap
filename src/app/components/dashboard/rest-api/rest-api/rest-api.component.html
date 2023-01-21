@@ -14,7 +14,7 @@
         <mat-label>url</mat-label>
         <input matInput #gf type="text">
     </mat-form-field>
-    <button mat-raised-button color="primary" (click)="makeRequest()">Submit</button>
+    <button mat-raised-button color="primary" (click)="makeRequest(gf.value)">Submit</button>
 </div>
 <div class="div-row">
     <mat-form-field #area appearance="fill">
@@ -25,7 +25,7 @@
             cdkTextareaAutosize
             #autosize="cdkTextareaAutosize"
             cdkAutosizeMinRows="1"
-            cdkAutosizeMaxRows="16"
+            cdkAutosizeMaxRows="30"
             [textContent]="textField">
         </textarea>
     </mat-form-field>

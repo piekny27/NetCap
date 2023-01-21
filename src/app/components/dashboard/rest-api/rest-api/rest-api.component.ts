@@ -28,9 +28,9 @@ export class RestApiComponent {
     { id: 2, viewValue: 'Get bbbbbb', url: (RestApiComponent.dbURL + "balaptops.json?orderBy=\"info\"&startAt=3&print=pretty")}
   ];
 
-  makeRequest(){
-    if(this.currentItem !== undefined){
-      this.getLaptops(this.currentItem).subscribe(
+  makeRequest(url:string){
+    if(url !== undefined){
+      this.getLaptops(url).subscribe(
         response => {
           this.textField = JSON.stringify(response,undefined, 4);
         }
