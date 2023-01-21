@@ -23,9 +23,9 @@ export class RestApiComponent {
   static dbURL: string = 'https://netcap-f23e0-default-rtdb.europe-west1.firebasedatabase.app/';
 
   requests: Requests[] = [
-    { id: 0, viewValue: 'Get all laptops sorted by "info".', url: (RestApiComponent.dbURL + "laptops.json?orderBy=\"info\"&startAt=3&print=pretty")},
-    { id: 1, viewValue: 'Get asdfs', url: (RestApiComponent.dbURL + "alaptops.json?orderBy=\"info\"&startAt=3&print=pretty")},
-    { id: 2, viewValue: 'Get bbbbbb', url: (RestApiComponent.dbURL + "balaptops.json?orderBy=\"info\"&startAt=3&print=pretty")}
+    { id: 0, viewValue: 'Get first 3 laptops sorted by "id".', url: (RestApiComponent.dbURL + "laptops.json?print=pretty&orderBy=\"id\"&limitToFirst=3")},
+    { id: 1, viewValue: 'Get all published laptops', url: (RestApiComponent.dbURL + "laptops.json?orderBy=\"published\"&equalTo=true")},
+    { id: 2, viewValue: 'Get 3 most expensive laptops', url: (RestApiComponent.dbURL + "laptops.json?print=pretty&orderBy=\"price/price\"&limitToLast=3")}
   ];
 
   makeRequest(url:string){
