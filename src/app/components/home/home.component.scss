@@ -18,9 +18,9 @@
   background-color: rgb(46, 141, 70); 
   color: white; 
   cursor: pointer; 
-  padding: 0.5rem;
-  border-radius: 10px; 
-  font-size: 3rem; 
+  padding: 0.65rem;
+  border-radius: 8px;  
+  line-height: 0 !important;
 }
 
 #myBtn:hover {
@@ -83,11 +83,10 @@ body {
 
 .footer {
     position: relative;
-    margin-top: -6rem;
+    margin-top: -8rem;
     height: 6rem;
     color: white;
-    bottom: 0;
-    width: 100%;   
+    bottom: 0; 
     background:rgb(39, 76, 156);
     padding: 1rem 6rem 1rem 6rem;
     clear: both;
@@ -95,16 +94,9 @@ body {
 
 .wrapper {
     min-height: 93.4%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      ". a a a a ."
-      ". a a a a .";
   }
 
 .main {
-  grid-area: a;
-  justify-self: center;
   overflow: auto;
   padding-bottom: 6rem;
 }

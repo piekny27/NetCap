@@ -3,6 +3,9 @@
       <a [routerLink]="['/home']"><img src="assets/images/bran.png" alt="brand_logo" style="height:2rem;"></a>
     </span>
       <div class="spacer"></div>
+    <!-- <button mat-icon-button class="menu-icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
     <a mat-button [routerLink]="['/home']"><mat-icon>shop</mat-icon>Shop</a>
     <a *ngIf="authService.isLoggedIn" mat-button [routerLink]="['/dashboard']"><mat-icon>dashboard</mat-icon>Dashboard</a>
     <a *ngIf="!authService.isLoggedIn" mat-button [routerLink]="['/login']">Log In</a>
