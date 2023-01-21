@@ -22,8 +22,7 @@ npm install -g @angular/cli
 npm install firebase @angular/fire
 ```
 if you are using powershell use 
-```![obraz](https://user-images.githubusercontent.com/66240511/213878066-c3631e10-b03c-4597-ba68-39cb8ed08ff0.png)
-
+```
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
