@@ -1,9 +1,14 @@
-<a href="#" onclick="return false;"><img src="https://cdn.discordapp.com/attachments/975403202398797919/1060549808135356477/bran1.png" height="50" alt="NetCap_logo"></a>
+<a href="#" onclick="return false;"><img src="./src/assets/images/brand-logo.png" height="50" alt="NetCap_logo"></a>
 <br><br>
 <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"></a>
 <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></a>
 <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"></a>
 <a href="#" onclick="return false;"><img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white"></a>
+
+> [!WARNING]
+> ### Repository Deprecated
+> This repository is no longer actively maintained or supported. 
+<br>Feel free to use or fork the code, but no further updates or issue responses should be expected.
 
 ### An online store project based on Angular with Firebase authentication. <br>
 This project was generated with Angular CLI version 15.0.4. <br>
@@ -57,14 +62,8 @@ export const environment = {
 
 ## Gallery
 <p align="center">
-<a href="#" onclick="return false;"><img src="https://cdn.discordapp.com/attachments/975403202398797919/1066400442118054009/laptopstore.png" height="330" alt="NetCap_logo"></a>
+<a href="#" onclick="return false;"><img src="./src/assets/images/store_preview.webp" height="380" alt="store preview"></a>
 </p>
 <p align="center">
-<a href="#" onclick="return false;"><img src="https://cdn.discordapp.com/attachments/975403202398797919/1066402902920417392/laptopstore2.png" height="330" alt="NetCap_logo"></a>
+<a href="#" onclick="return false;"><img src="./src/assets/images/store_dashboard.webp" height="380" alt="store dashboard"></a>
 </p>
-
-## Links
-
-[Node.js](https://nodejs.org/)<br>
-[Angular CLI](https://github.com/angular/angular-cli)<br>
-[Angular Material](https://material.angular.io/)
